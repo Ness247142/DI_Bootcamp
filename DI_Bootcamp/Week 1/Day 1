@@ -1,1 +1,103 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hulk</title>
+    <style>
+        body {
+            background-color: rgb(0, 89, 255);
+        }
+
+        nav {
+            font-weight: bold;
+            font-size: large;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        h1 {
+            color: green;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        article p {
+            color: white;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        footer p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Characters">Characters</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Help">Help</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <article>
+        <section>
+            <h1>Hulk</h1>
+            <aside>
+                <div>
+                    <img style="float:left;"
+                        src="https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_1000x1000_$&$product=PartyCity/665292"
+                        alt="Hulk Life-Size Cardboard Cutout" width="300px" height="400px">
+                    <img style="float:center;"
+                        src="https://i.pinimg.com/originals/62/c4/09/62c4093b50ef7e6adfaf42a1044c2c8c.png"
+                        alt="Avengers Infinity War - Hulk" width="300px">
+                </div>
+            </aside>
+            <h2>Origins</h2>
+            <p>The Incredible Hulk is a character created by writer <b>Stan Lee</b> and artist <b>Jack Kirby</b>.
+                Reserved physicist Dr. Bruce Banner is accidentally exposed to the blast of a test detonation of a gamma
+                bomb he invented while trying to save Rick Jones. Subsequently, when Banner is angry, he involuntarily
+                transforms into a huge, incredibly strong creature known as the <u>Hulk.</u></b>
+            </p>
+            <p>Beginning in comic books in the early 1960s, the character has since been depicted in various other
+                media: in a live-action television series, in three animated series, various video games, and through
+                the use of CGI in seven films: Hulk, The Incredible Hulk, The Avengers, The Avengers: Age of Ultron,
+                Thor: Ragnarok, The Avengers: Infinity War, and Avengers: Endgame.</p>
+        </section>
+    </article>
+    <hr>
+    <footer>
+        <p><i>Author: Nessim Azoulay</p></i>
+        <p><a href="ness.azoulay.ta@gmail.com">ness.azoulay.ta@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>
