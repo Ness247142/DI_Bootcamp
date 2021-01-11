@@ -1,0 +1,17 @@
+body{
+    background-color:skyblue;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  .first {
+      margin: 50 100 50 100;
+      border: ;
+      padding: ;
+      width: 30px;
+      height: 30px;
+
+  }
