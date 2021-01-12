@@ -1,0 +1,192 @@
+.all {
+    margin: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body {
+    background-image: url(https://smart.servier.com/wp-content/uploads/2016/10/world-map-update.png);
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.title {
+    color: black;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    font-family: Helvetica;
+    align-content: center;
+}
+
+.first_row {
+    display: flex;
+    flex-direction: row;
+    color: blue;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+.business {
+    color: blue;
+
+}
+
+.active_users {
+    color: blue;
+
+}
+
+.sold {
+    color: blue;
+    margin-right: 40px;
+}
+
+.second_row {
+        display: flex;
+        flex-direction: row;
+        color: gray;
+        align-items: flex-start;
+        justify-content: space-around;
+        position: relative;
+        margin: -40px 80px 0 0;
+        flex-wrap: wrap;
+    }
+
+#business {
+    align-self: flex-start;
+    margin-bottom: 100px;
+}
+
+#active_users {
+    align-self: flex-start;
+    margin-bottom: 100px;
+}
+
+#sold {
+    align-self: flex-start;
+    margin-bottom: 100px;
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    flex-direction: row;
+}
+
+.tina {
+        width: 100%;
+        background: white;
+        border: 3px solid pink;
+        height: 200px;
+        margin: 20px;
+        align-self: center;
+    }
+
+.corrine {
+        width: 100%;
+        border: 3px solid blue;
+        background: white;
+        height: 200px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+
+.chris {
+        width: 100%;
+        border: 3px solid green;
+        background: white;
+        height: 200px;
+        margin: 20px;
+        align-self: center;
+    }
+
+    img {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+        
+    @media all and (min-width: 754px) { 
+        .headline {
+            grid-template-areas: 
+            "headline    headline   headline";
+        }
+    
+        .text {
+            grid-template-areas: 
+            "text-left  text-middle text-right";
+        }
+    
+        .container {
+            grid-template-areas: 
+            "left-up    middle-up   right-up"
+            "left-down  middle-down right-down";
+        }
+    }
+    
+    @media all and (min-width: 598px) and (max-width: 754px) {
+        body {
+            background-repeat: repeat;
+        }
+        .text {
+            margin-top: 50px;
+            grid-template-areas: 
+            "text-left"
+            "text-middle"
+            "text-right";
+        }
+    
+        .container {
+            grid-template-areas:
+            "middle-up"
+            "middle-down"
+            "right-up"
+            "right-down";
+            width: 50vw;
+            margin-top: 400px;
+            margin-left: 20vw;
+            
+        }
+    }
+    
+    @media all and (max-width: 598px) {
+        body {
+            background-repeat: repeat;
+        }
+        .text {
+            margin-top: 110px;
+            grid-template-areas: 
+            "text-left"
+            "text-middle"
+            "text-right";
+        }
+    
+        .container {
+            grid-template-areas:
+            "middle-up"
+            "middle-down"
+            "right-up"
+            "right-down";
+            width: 50vw;
+            margin-top: 400px;
+            margin-left: 20vw;
+            
+        }
+    }
