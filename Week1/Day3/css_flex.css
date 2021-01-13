@@ -1,6 +1,15 @@
 .container {
-    grid-template-areas: 'left mid right';
+    grid-template-areas: 'left center right';
   display: grid;
+}
+
+.item {
+    background-color: yellow;
+  margin-top: 10px;
+  margin-right: 80px;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
 }
 
 .container1 {
@@ -21,16 +30,7 @@
     display: flex;
   flex-direction: row;
   justify-content: center;
-  grid-area: mid;
+  grid-area: center;
   align-items: center;
   
-}
-
-.item {
-    background-color: yellow;
-  margin-top: 10px;
-  margin-right: 80px;
-  border: 2px solid black;
-  height: 100px;
-  width: 100px;
 }
