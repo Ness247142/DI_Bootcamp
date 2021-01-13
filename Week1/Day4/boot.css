@@ -1,0 +1,15 @@
+.container {
+    border: 1px solid gray;
+}
+
+.row {
+    border: 1px solid blue;
+}
+
+.col-md-8 {
+    border: 1px solid coral;
+}
+
+.col-md-4 {
+    border: 1px solid green;
+}
