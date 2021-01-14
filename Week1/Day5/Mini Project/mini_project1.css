@@ -1,0 +1,116 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+  }
+
+  .container {
+    width: 1170px;
+}
+
+  nav {
+    font-weight: lighter;
+    font-size: 20px;
+    position: sticky;
+    background-color: black;
+    align-items: flex-end;
+    display: inline-block;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+
+
+form {
+    width: 300px;
+    clear: both;
+    display: inline;
+    text-align: right;
+  }
+  
+form input {
+    width: 100%;
+    clear: both;
+    align-content: center;
+  }
+
+.jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.navbar-form .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #101010;
+}
+
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+
+.nav-item {
+      display: flex;
+      justify-content: space-around;
+  }
+
+.navbar {
+      display: inline-block;
+  }
+
+div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: inline-block;
+  }
+
+  .btn_btn-secondary {
+    background-color: gray; 
+    border: none; 
+    color: white; 
+    padding: 12px 16px; 
+    font-size: 16px;
+    cursor: pointer; 
+  }
+  
+  .btn:hover {
+    background-color: lightgray;
+  }
+
+  @media all and (min-width: 1024px) and (max-width: 1280px) { body {
+  width: 100%;
+  font-size: 50px;
+}}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { body {
+  width: 100%;
+  font-size: 40px;
+}}
+
+@media all and (min-width: 480px) and (max-width: 768px) { body {
+  width: 100%;
+  font-size: 30px;
+}}
+
+@media all and (max-width: 480px) { body {
+    width: 100%;
+}}
