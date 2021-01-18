@@ -1,10 +1,8 @@
 let fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
 
-fruits.shift(); 
-console.log(fruits); // Remove "Banana" from the array.
+fruits.shift(); // Remove "Banana" from the array.
 
-fruits.sort();
-console.log(fruits); // Sort the array in order.
+fruits.sort(); // Sort the array in order.
 
 fruits.push("Kiwi"); // Put “Kiwi” at the end of the array.
 
