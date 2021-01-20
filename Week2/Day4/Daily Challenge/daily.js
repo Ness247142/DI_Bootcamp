@@ -21,7 +21,7 @@
 // // }
 
 
-let sentence = prompt("Give me a few words");
+let sentence = prompt(" Give me a few words for today ");
 
 let words = sentence.split(" ");
 
