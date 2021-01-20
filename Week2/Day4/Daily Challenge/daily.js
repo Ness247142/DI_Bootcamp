@@ -23,7 +23,7 @@
 
 let sentence = prompt("Give me a few words");
 
-let sentenceArray = sentence.split(" ");
+let words = sentence.split(" ");
 
 let starRight = " *";
 
@@ -36,9 +36,9 @@ let temp = 0;
 
 function frame (){
 
-    for ( let x = 0; x < sentenceArray.length; x++ ) {
-        if ( temp < sentenceArray[x].length ) {
-            temp = sentenceArray[x].length;
+    for ( let x = 0; x < words.length; x++ ) {
+        if ( temp < words[x].length ) {
+            temp = words[x].length;
         }
     }
     
@@ -50,9 +50,9 @@ function frame (){
 
     console.log(star);
 
-    for ( let x = 0; x < sentenceArray.length; x++ ) {
-        let difference = temp-sentenceArray[x].length-3;
-        console.log(starRight + sentenceArray[x] + space.repeat(difference) + starLeft);
+    for ( let x = 0; x < words.length; x++ ) {
+        let difference = temp-words[x].length-3;
+        console.log(starRight + words[x] + space.repeat(difference) + starLeft);
     }
 
     console.log(star); 
