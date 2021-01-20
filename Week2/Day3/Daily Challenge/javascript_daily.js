@@ -1,14 +1,14 @@
 
 
-let x,y,star;
+let i, j, star;
 
-for (x=1; x <=6; x++)
+for ( let i = 0; i <= 6; i++)
 {
 
-   for (y=1; y < x; y++)
+   for (let j = 0; j < i; j++)
      {
     star = star + (" * ");        
       }
 
  console.log(star);
- star=" ";    }
+ star = " "; }
