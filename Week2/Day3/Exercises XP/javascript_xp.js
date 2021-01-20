@@ -102,7 +102,7 @@ let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
 let sortedNames = names.sort();
 let secondList = " ";
 
-for (const i in sortedNames) {
+for (let i in sortedNames) {
     secondList += sortedNames[i][0];
 }
 
