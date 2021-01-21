@@ -42,7 +42,7 @@ function frame (){
         }
     }
     
-    temp +=4; 
+    temp +=5; 
     let star = "*";
     for ( let y = 0; y < temp; y++ ) {
         star += "*";
