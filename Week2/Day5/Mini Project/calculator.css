@@ -1,0 +1,80 @@
+
+table {
+border-radius: 10px;
+border: solid rgb(245, 245, 170) 20px; 
+}
+
+body {
+margin: 0;
+padding: 5em 5em 5em 5em;
+text-align: center;
+}
+
+input[type="text"] 
+{ 
+background-color:white; 
+border: solid black 2px; 
+width: 98%;
+height: 70px; 
+cursor: pointer;
+font-size: 20px;
+} 
+
+button {
+width: 70px;
+height: 70px;
+border: 0;
+cursor: pointer;
+}
+
+.title{ 
+margin-bottom: 10px;
+padding: 10px; 
+text-align: center; 
+font-size: 30px;
+width: 350px;
+height: 30px;
+color:black; 
+border: solid black 2px;
+border-radius: 10px;
+} 
+  
+input[type="button1"] 
+{ 
+background-color:rgb(54, 167, 54); 
+text-align: center;
+font-size: 30px;
+color: white; 
+width: 70px;
+height: 70px;
+border-radius: 10px;
+cursor: pointer;
+border: solid black 2px; 
+} 
+
+input[type="button2"] 
+{ 
+background-color:orange; 
+text-align: center;
+font-size: 30px;
+color: white; 
+width: 70px;
+height: 70px;
+border-radius: 10px;
+cursor: pointer;
+border: solid black 2px; 
+} 
+
+input[type="button3"] 
+{ 
+background-color:red; 
+text-align: center;
+font-size: 30px;
+color: white; 
+width: 70px;
+height: 70px;
+border-radius: 10px;
+cursor: pointer;
+border: solid black 2px; 
+} 
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  </head>
+
+
+  <body> 
+    <div class = title >JavaScript Calculator</div> 
+    <table border="1"> 
+       <tr> 
+          <td colspan="3"><input type="text" id="result"/></td> 
+          <td><input type="button3" value="c" onclick="clr()"/></td> 
+       </tr> 
+       <tr> 
+          <td><input type="button1" value="0" name="button" onclick="my_f(0);"/></td> 
+          <td><input type="button1" value="1" name="button" onclick="my_f(1);"/></td> 
+          <td><input type="button1" value="2" name="button" onclick="my_f(2);"/></td> 
+          <td><input type="button1" value="3" name="button" onclick="my_f(3);"/></td> 
+       </tr> 
+       <tr> 
+          <td><input type="button1" value="4" name="button" onclick="my_f(4);"/></td> 
+          <td><input type="button1" value="5" name="button" onclick="my_f(5);"/></td> 
+          <td><input type="button1" value="6" name="button" onclick="my_f(6);"/></td> 
+          <td><input type="button1" value="7" name="button" onclick="my_f(7);"/></td> 
+       </tr> 
+       <tr> 
+          <td><input type="button1" value="8" name="button" onclick="my_f(8);"/></td> 
+          <td><input type="button1" value="9" name="button" onclick="my_f(9);"/></td>
+          <td><input type="button1" value="." name="button" onclick="my_f('.');"/></td> 
+          <td><input type="button2" value="+" name="button" onclick="my_f('+');"/></td> 
+       </tr> 
+       <tr> 
+          <td><input type="button2" value="-" name="button" onclick="my_f('-');"/></td> 
+          <td><input type="button2" value="*" name="button" onclick="my_f('*');"/></td>
+          <td><input type="button2" value="/" name="button" onclick="my_f('/');"/></td>
+          <td><input type="button2" value="=" name="button" onclick="solve('=');"></td>
+       </tr> 
+    </table> 
+
+
+    <script src="calculator.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
