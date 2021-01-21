@@ -14,16 +14,16 @@ let maxBottles = 99;
 
 let x = 1; 
 
-let number = parseInt(sentence);
+let y = parseInt(sentence);
 
 
-while(number > 0) {
+while(y > 0) {
 
-    console.log(`${number} bottels of beer on the wall,`);
+    console.log(`${y} bottels of beer on the wall,`);
 
-    console.log(`${number} bottels of beer on the wall,`);
+    console.log(`${y} bottels of beer on the wall,`);
 
-    console.log(`${number} bottels of beer.`); 
+    console.log(`${y} bottels of beer.`); 
 
     if (x == 1) {
 
@@ -34,7 +34,7 @@ while(number > 0) {
         console.log(`Take ${x} down, pass them around.`);
     }
 
-    number -= x;
+    y -= x;
 
     x++;
 }
