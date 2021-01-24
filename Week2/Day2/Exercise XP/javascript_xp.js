@@ -1,12 +1,12 @@
 
 // Exercise 1
-let x = 12;
-let y = 10;
+let x = 5;
+let y = 2;
 
-if (x == 5 && y == 2){
+if (x > y ){
     console.log("x is the biggest number");
 } else {
-    console.log("You are wrong");
+    console.log("y is the biggest number");
 }
 
 // Exercise 2
@@ -24,7 +24,7 @@ if (newDog == "Chihuahua"){
 }
 
 //Exercise 3
-let x = prompt("What is your number?");
+let x = prompt("What is your favorite number?");
 
 if (x % 2 == 0){
     console.log("x is an even number");
@@ -44,8 +44,8 @@ if (users.length == 0) {
 } else if (users.length == 1){
     console.log(users[0] + "is online");
 
-} else if (users.length == 4){
-    console.log(users[0] + " " + users[1] + " and 3 others are online ");
+} else if (users.length == 2){
+    console.log(users[0] + users[1] + " are online ");
 
 } else if (users.length > 2){
     console.log(users[0] + users[1] + " and " + numberOfPeopleRemaining + " more are online ");
