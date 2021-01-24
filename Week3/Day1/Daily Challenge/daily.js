@@ -17,6 +17,9 @@ for (let i = 0; i <= 7; i++) {
     console.log(document.body.appendChild(newDiv));
     let SolarSystemclass = document.getElementsByTagName("div")[i].setAttribute("class", `planet planets${i}`);
     let planetBackgroundColor = document.getElementsByClassName("planet")[i].style.backgroundColor = colors[i];
+    console.log(SolarSystemclass);
+    console.log(planetBackgroundColor);
+}
 }
 
 
