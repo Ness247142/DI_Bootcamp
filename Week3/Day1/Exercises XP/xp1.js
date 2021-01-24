@@ -42,8 +42,7 @@ console.log(newList);
 
 console.log(document.body.children[1].lastChild[1].innerHTML = "Richard");
 
-let collection = document.getElementsByTagName("li").length;   //grabbing all li to find out how many li we have
-//console.log(collection);
+let collection = document.getElementsByTagName("li").length; 
 
 for (let i = 0; i < collection; i++) {
     let liTwo = document.getElementsByTagName("li")[i].innerHTML = "Nessim";
@@ -62,7 +61,7 @@ let allUl = document.getElementsByTagName("ul");
 for (let selectedUl of allUl) {
     selectedUl.firstElementChild.innerHTML = "Nessim"
     let liNew = document.createElement("li");
-    let text = document.createTextNode("Hey Student!")
+    let text = document.createTextNode("Hey students")
     liNew.appendChild(text);
     selectedUl.appendChild(liNew);
 
