@@ -4,10 +4,6 @@
 
 //Create a list of all bold items 
 let bold_items = document.getElementsByTagName("strong"); 
-
-// Call the function highlight() onMouseOver and the function return_normal() onMouseOut
-newEvent.addEventListener("mouseover", highlight)
-newEvent.addEventListener("mouseout", return_normal)
  
 // Create a function called : getBold_items() that takes no parameter. This function has to collect all the bold items inside the paragraph.
 function getBold_items() 
@@ -34,4 +30,8 @@ function return_normal(event){
        bold_items[i].style.color = "black";
   }
 }
+
+// Call the function highlight() onMouseOver and the function return_normal() onMouseOut
+newEvent.addEventListener("mouseenter", highlight)
+newEvent.addEventListener("mouseleave", return_normal)
 
