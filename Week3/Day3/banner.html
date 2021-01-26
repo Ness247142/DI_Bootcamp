@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+    <button onclick="myStopFunction()">Stop time</button>
+
+    <p></p>
+    <script>
+        let timer = setInterval(myTimer, 1000);
+        let count = 10
+        function myTimer() {
+            console.log("hi")
+            let p = document.getElementsByTagName("p")[0]
+            p.innerHTML = `The sales end in ${count}sec ! `
+            count--
+            if (count == 0) {
+                clearInterval(timer);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
