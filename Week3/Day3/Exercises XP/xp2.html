@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        #div {
+            width: 350px;
+            height: 100px;
+            padding: 10px;
+            border: 2px solid gray;
+        }
+    </style>
+
+</head>
+<script>
+    function allowDrop(event) {
+        event.preventDefault();
+    }
+
+    function drag(event) {
+        event.dataTransfer.setData("text", event.target.id);
+    }
+
+    function drop(event) {
+        event.preventDefault();
+        let dataNew = event.dataTransfer.getData("text");
+        event.target.appendChild(document.getElementById(dataNew));
+    }
+</script>
+
+<body>
+
+    <h1>Drag the logo into the rectangle</h1>
+
+    <div id = "div" ondrop="drop(event)" ondragover = "allowDrop(event)"></div>
+    <br>
+    <img id = "drag" src = "https://upload.wikimedia.org/wikipedia/commons/d/df/Img_logo_blue.jpg" draggable = "true"
+        ondragstart = "drag(event)" width = "330" height = "100">
+
+</body>
+
+</html>
