@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Private Password</h1>
+    <h4>* Careful! Use only letters</h4>
+    <form>
+        <label for="password">Password:</label>
+        <input id="password" type="text" required pattern="[A-Za-z]+" />
+        <br>
+        <button>submit</button>
+    </form>
+
+    <script>
+        let input = document.querySelector("password");
+        let letters = /[A-Za-z]+/;
+        input.addEventListener("keypress", event => {
+            if (!letters.test(event.key)) {
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
