@@ -61,12 +61,12 @@ button.addEventListener("click", function () {
     }
 });
 
-body.addEventListener("mousedown", function () {
-    mousedown = true;
+body.addEventListener("mouseup", function () {
+    mousedown = false;
     console.log(body);
 })
 
-body.addEventListener("mouseup", function () {
-    mousedown = false;
+body.addEventListener("mousedown", function () {
+    mousedown = true;
     console.log(body);
 })
