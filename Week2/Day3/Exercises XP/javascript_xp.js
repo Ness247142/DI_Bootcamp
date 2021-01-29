@@ -23,47 +23,65 @@ for (let i = 0; i < colors.length; i++) {
 
 // Exercise 2
 
-let people = ["Greg", "Mary", "Devon", "James"]
+let people = ["Greg", "Mary", "Devon", "James"];
 
-for(let i = 0; i < people.length; i++) {
+for (i = 0; i < people.length; i++) {
     console.log(people[i]);
-  }
+}
 
-people.shift();
+let index = people.indexOf("Greg");
 
-console.log(people[3]);
-people[3] = "Jason";
+if (index !== -1) {
+    people.splice(index, 1);
+}
+console.log(people);
 
-people.push("Nessim"); 
+let index = people.indexOf("James");
 
-for (let counter = 0; counter <= people.length; counter++){
-    if(counter == "Mary") {
-        console.log("exit")
+if (index !== -1) {
+    people.splice(index, 1, "Jason");
+}
+
+console.log(people);
+
+people.push("Nessim");
+
+console.log(people);
+
+let index = people.indexOf("Jason");
+
+for(i = 0; i < people.length; i++) {
+
+    console.log(people[i]);
+
+    if (i == index) {
         break;
+    }
 }
-}
 
-console.log(people.slice(0, 3));
+let index_2 = people.indexOf("Nessim");
 
-people.indexOf("Mary");
+let people_2 = people.slice(index-1, index_2);
 
-people.indexOf(people.length-1);
+console.log(people_2);
 
-let last = people[3];
+console.log(people.indexOf("Mary"));
 
+console.log(people.indexOf("Foo"));
 
+let last = people[people.length-1];
+
+console.log(last);
 
 //Exercise 3
-let numbers = prompt("Give me a new number");
-let i = 0;
+let numbers = prompt("Give me a number");
 
-while(i < 10){
-    i++;
-    console.log(i)
-    prompt("Give me another number");
-	
+while (number < 10) {
+    alert("Your number must be bigger than 10");
+    number = prompt("Pick another number");
 }
-alert("Good job!")
+
+alert(`Your number is: ${number}`);
 
 
 
@@ -76,16 +94,19 @@ let guestList = {
     Sam: "Argentina"
   }
 
-  let name = prompt("What is your name?");
-  let sentence = "Hi! I'm " + guestList + ", and I'm from " + guestList["country"];
-
-  if (i == guestList.length) {
-    console.log(sentence);
+  for (const i in guestList) {
+    if (guest != i) {
+        continue;
+    } else if (guest == i){
+        alert(`Hi! I'm ${i}, and I'm from ${guestList[i]}.`);
+        break;
+    } else {
+        alert(`Hi, I am a guest`);
+        break;
+    }
 }
-else {
-    console.log(" Hi! I'm a guest. ");
-}
 
+console.log(guestList);
 
 
 //Exercise 5
@@ -100,7 +121,7 @@ for (let x in family) {
 let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
 
 let sortedNames = names.sort();
-let secondList = " ";
+let secondList = "";
 
 for (let i in sortedNames) {
     secondList += sortedNames[i][0];
