@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js" async defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 
@@ -72,11 +72,13 @@
 				<div class="col-md-8 col-sm-12 desc">
 					<h3>Nessim Azoulay</h3>
 					<p class="text-muted">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-						non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						A motivated, adaptable and responsible Communication Interactive graduate seeking a position in
+						a company which will utilize the professional and technical skills developed through past work
+						experiences in this field. I have a methodical, customer-focused approach to work and a strong
+						drive to see things through to completion.
+						Experienced in Python and JavaScript based programming with a background in the Developers
+						Institute TLV Coding Bootcamp. Possess strong skills in website building and project management
+						that can help Service Business Companies to obtain worthwhile outcomes.
 					</p>
 				</div>
 			</div>
@@ -86,41 +88,47 @@
 
 	<section class="portfolio" id="portfolio" style="color: rgba(27, 173, 27, 0.836);">
 		<h1 class="text-center">Portfolio</h1>
+		<div id="myBtnContainer">
+			<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+			<button class="btn" onclick="filterSelection('week1')"> Week1</button>
+			<button class="btn" onclick="filterSelection('week2')"> Week2</button>
+			<button class="btn" onclick="filterSelection('week3')"> Week3</button>
+		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-12">
-					<img
-						src="https://image.freepik.com/vecteurs-libre/page-accueil-connexion-aux-vagues-abstraites_52683-23493.jpg">
+				<div class="filterDiv col-md-4 col-sm-12">
+					<a href="https://github.com/Ness247142/DI_Bootcamp/tree/main/Week1/Day5/Mini%20Project"><img
+							src="https://www.lesemotionneurs.com/wp-content/uploads/2020/05/Gabarit_Image_Entete_Site-2.jpg"></a>
 				</div>
-				<div class="col-md-4 col-sm-12">
-					<img
-						src="https://previews.123rf.com/images/seamartini/seamartini1610/seamartini161000799/64879193-pasta-mod%C3%A8le-de-carte-de-menu-pour-restaurant-de-cuisine-italienne-vector-design-avec-des-%C3%A9l%C3%A9ments-de-ty.jpg">
+				<div class="filterDiv col-md-4 col-sm-12">
+					<a href="https://github.com/Ness247142/DI_Bootcamp/tree/main/Week2/Day5/Mini%20Project"><img
+							src="https://media.istockphoto.com/vectors/calculator-icon-vector-id1000600468?b=1&k=6&m=1000600468&s=612x612&w=0&h=qWQxi2NruFHFrIV2LyWV4lLfnnzI2_0FQd9cOXoytWo="></a>
 				</div>
-				<div class="col-md-4 col-sm-12">
-					<img src="https://image.freepik.com/vecteurs-libre/burger-tableau-noir_62951-60.jpg">
+				<div class="filterDiv col-md-4 col-sm-12">
+					<a href="https://github.com/Ness247142/DI_Bootcamp/tree/main/Week3/Day4/Mini%20Project%201"><img
+							src="https://steamcdn-a.akamaihd.net/steam/apps/1275640/capsule_616x353.jpg?t=1587390051"></a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 col-sm-12">
+				<div class="filterDiv col-md-4 col-sm-12">
 					<img
 						src="https://www.bondora.com/blog/wp-content/uploads/statistics-page-update-e1486653125779.png">
 				</div>
-				<div class="col-md-4 col-sm-12">
+				<div class="filterDiv col-md-4 col-sm-12">
 					<img
 						src="https://image.winudf.com/v2/image1/Y29tLnNtYXJ0bXV4Lm11c2ljbGlzdF9zY3JlZW5fMF8xNTY3MDMwNjAzXzA4Nw/screen-0.jpg?h=500&fakeurl=1&type=.jpg">
 				</div>
-				<div class="col-md-4 col-sm-12">
+				<div class="filterDiv col-md-4 col-sm-12">
 					<img
 						src="https://media.istockphoto.com/photos/young-man-mobile-developer-programmer-writes-program-code-on-a-laptop-picture-id1277019303?k=6&m=1277019303&s=170667a&w=0&h=UCXzKO6bvYqVVO8gzwqNPfGo1Qs0EBlAtj0m8nI5n8s=">
 				</div>
 			</div>
-
 		</div>
 	</section>
 
 	<section class="blog" id="blog">
 		<h1 class="text-center" style="color: green;">Blog</h1>
-		<div class="container">
+		<div class="container2">
 			<div class="row">
 				<div class="col-md-4 col-sm-12">
 					<div class="card">
@@ -132,7 +140,7 @@
 								<p class="card-text">Some quick example text to build on the card title...</p>
 						</div>
 						<div class="card-footer">
-							<a href="" class="card-link">Read more</a>
+							<a href="https://www.worldpoliticsreview.com" class="card-link">Read more</a>
 						</div>
 					</div>
 				</div>
@@ -145,21 +153,21 @@
 							<p class="card-text">Some quick example text to build on the card title...</p>
 						</div>
 						<div class="card-footer">
-							<a href="" class="card-link">Read more</a>
+							<a href="https://www.i24news.tv/en" class="card-link">Read more</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12">
 					<div class="card">
 						<img class="card-img-top"
-							src="https://gijn.org/wp-content/uploads/2019/03/audience-engagement-771x513.jpg"
+							src="https://zaclab.com/wp-content/uploads/2019/12/Website-Developers-in-India.jpg"
 							class="img-fluid">
 						<div class="card-body">
 							<h4 class="card-title" style="color:green;">Post Title</h4>
 							<p class="card-text">Some quick example text to build on the card title...</p>
 						</div>
 						<div class="card-footer">
-							<a href="" class="card-link">Read more</a>
+							<a href="https://stackoverflow.com" class="card-link">Read more</a>
 						</div>
 					</div>
 				</div>
@@ -170,13 +178,15 @@
 
 	<section class="team" id="team">
 		<h1 class="text-center" style="color: green;">Our Team</h1>
-		<div class="container">
+		<div class="container" style="display: flex;">
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-12 item">
-					<img src="Nessim.jpg" class="img-fluid" width="100%" alt="team">
-					<div class="des">
-						Nessim
-					</div>
+					<a href="https://github.com/Ness247142"><img src="Nessim.jpg" class="img-fluid" width="100%"
+							alt="team">
+						<div class="des">
+							Nessim
+						</div>
+					</a>
 					<span class="text-muted">Web Developer</span>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-12 item">
@@ -217,14 +227,12 @@
 					<div class="col-md-4 col-sm-12">
 						<h1 style="color: rgb(85, 87, 184);">Get in Touch</h1><br>
 						<address>
-							<a href='https://github.com' target="_blank">
-								<ion-icon size="large" name="logo-github"></ion-icon>
+							<a href='https://github.com' class="fa fa-github fa-2x" name="logo-github">
 							</a>
-							<a href='https://twitter.com/BoredElonMusk' target="_blank">
-								<ion-icon size="large" name="logo-linkedin"></ion-icon>
+							<a href='https://twitter.com/BoredElonMusk' class="fa fa-linkedin-square fa-2x"
+								name="logo-linkedin">
 							</a>
-							<a href='https://facebook.com' target="_blank">
-								<ion-icon size="large" name="logo-facebook"></ion-icon>
+							<a href='https://facebook.com' class="fa fa-facebook fa-2x" name="logo-facebook">
 							</a>
 						</address>
 					</div>
@@ -252,6 +260,8 @@
 
 		</div>
 	</section>
+
+	<script type="text/javascript" src="portfolio.js"></script>
 </body>
 
 </html>
