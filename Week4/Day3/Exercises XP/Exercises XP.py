@@ -39,13 +39,13 @@ print(f"Your family has to pay {total_price}$")
 # Exercise 3: Zara
 # Create a dictionary called brand, and translate the information above into keys and values.
 keys = ['name', 'creation_date', 'creation_name', 'type_of_clothes', 'international_competitors', 'number_stores', 'major_color']
-values = ['Zara', 1975, 'Amancio Ortega Gaona', ['men', 'women', 'children', 'home'], ['Gap', 'H&M', 'Benetton'], 7000, ['France -> blue", "Spain -> red", "US -> pink, green']]
+values = ['Zara', 1975, 'Amancio Ortega Gaona', ['men', 'women', 'children', 'home'], ['Gap', 'H&M', 'Benetton'], 7000, ['France -> blue', 'Spain -> red', 'US -> pink, green']]
 
 brand = dict(zip(keys, values))
 
 print(brand)
 
-{'name': 'Zara', 'creation_date': 1975, 'creation_name': 'Amancio Ortega Gaona', 'type_of_clothes': ['men', 'women', 'children', 'home'], 'international_competitors': ['Gap', 'H&M', 'Benetton'], 'number_stores': 7000, 'major_color': ['France -> blue", "Spain -> red", "US -> pink, green']}
+{'name': 'Zara', 'creation_date': 1975, 'creation_name': 'Amancio Ortega Gaona', 'type_of_clothes': ['men', 'women', 'children', 'home'], 'international_competitors': ['Gap', 'H&M', 'Benetton'], 'number_stores': 7000, 'major_color': ['France -> blue', 'Spain -> red', 'US -> pink, green']}
 
 # Change the number of stores to 2.
 brand['number_stores'] = 2
@@ -54,7 +54,7 @@ print(brand)
 
 # Print a sentence that explains who the clients of Zara are.
 for clients in brand['type_of_clothes']:
-	print(f"The clients of Zara are {clients}")
+	print(f"The clients of Zara are " + clients)
 
 
 # Add a key called country_creation with a value of Spain to brand
@@ -76,9 +76,8 @@ print(last_competitor)
 
 
 # Print in a sentence, the major clothes’ colors in the US.
-for color in brand['major_color']['US']:
-	print(color)
-print("")
+for colors in brand['major_color'][2]:
+	print(f"The major clothes’ colors in the US are " + colors)
 
 # Print the amount of key value pairs (length of the dictionary).
 print(len(brand))
