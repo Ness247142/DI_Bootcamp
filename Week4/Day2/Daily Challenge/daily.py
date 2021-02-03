@@ -1,6 +1,6 @@
-birthday = input("Input your birthdate. Write it in DD/MM/YYYY: ")
+birthday = input("Input your birthdate. Write it DD/MM/YYYY: ")
 candle_number = int(birthday[-1])
-day, month, year = birthday.split(" ")
+day, month, year = birthday.split(' ')
 day = int(day)
 month = int(month)
 year = int(year)
@@ -21,3 +21,10 @@ def birthday_cake():
     print(f"|:B :i :r :t :h :d :a :y :|")
     print(f"|{17*space}|")
     print(f"{19*bottom}")
+    
+    if year == 0:
+        cake()
+        print("")
+        cake()
+    else:
+        cake()
