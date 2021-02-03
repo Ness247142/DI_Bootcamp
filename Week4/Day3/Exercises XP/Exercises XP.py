@@ -62,7 +62,8 @@ brand['country_creation'] = 'Spain'
 print(brand)
 
 # If the key international_competitors is in the dictionary, add the store Desigual.
-brand['international_competitors'] = ['Gap', 'H&M', 'Benetton', 'Desigual']
+if 'international_competitors' in brand:
+	brand['international_competitors'].append('Desigual')
 print(brand)
 
 # Delete the information about the date of creation.
