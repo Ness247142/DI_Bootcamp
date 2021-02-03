@@ -17,15 +17,15 @@
 # Example:
 # Hlrolelwod
 
-string = input("Give me a word with 10 characters ")
-string_ch = int(len(word))
+string = input("Give me a word with 10 characters: ")
+string_ch = int(len(string))
 
 if string_ch > 10:
 	print("string too long")
 elif string_ch < 10:
 	print("string not long enough")
 else:
-	print(" ")
+	print("")
 
 
 def text_first_last_ch():
