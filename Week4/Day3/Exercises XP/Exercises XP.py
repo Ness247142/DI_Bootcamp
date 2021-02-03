@@ -130,4 +130,8 @@ disney_users_C = {users[i]: i for i in range (0, len(users))}
 print(disney_users_C)
 
 
+for name in users:
+	if "i" in name and name[0] in ["m", "p"]:
+		print(name)
+
 
