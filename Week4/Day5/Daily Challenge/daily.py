@@ -3,7 +3,6 @@
 # Output : 1260388352
 # For example, 1234 represented in binary as 10011010010 and returns 1260388352 which represents in binary as 01001011001000000000000000000000
 
-# Function to reverse 32 bits
 def reverse_bits(x):
 	bits = 0
 	for i in range(0,32):
