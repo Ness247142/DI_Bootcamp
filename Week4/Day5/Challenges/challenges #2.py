@@ -5,7 +5,7 @@
 # After all the sandwiches have been made, print a message listing each sandwich that was made.
 
 sandwich_orders = ["tuna", "ham", "chicken", "cheese", "beef"]
-finished_sandwiches =[]
+finished_sandwiches = []
 
 while sandwich_orders:
     current_sandwich = sandwich_orders.pop()
@@ -20,8 +20,9 @@ for finished_sandwich in finished_sandwiches:
 # Add code near the beginning of your program to print a message saying the deli has run out of pastrami, and then use a while loop to remove all occurrences of ‘pastrami’ from sandwich_orders.
 # Make sure no pastrami sandwiches end up in finished_sandwiches.
 
-sandwich_orders = ["pastrami", "tuna", "ham", "chicken", "cheese", "beef", "pastrami", "pastrami"]
-finished_sandwiches =[]
+sandwich_orders = ["pastrami", "tuna", "ham",
+                   "chicken", "cheese", "beef", "pastrami", "pastrami"]
+finished_sandwiches = []
 
 print("The deli has run out of pastrami")
 while "pastrami" in sandwich_orders:
@@ -39,14 +40,14 @@ for finished_sandwich in finished_sandwiches:
 # Exercise 3
 # Draw the following patterns using for loops
 
-#Pattern 1
+# Pattern 1
 size = 3
 m = size - 1
 for i in range(0, size):
     for j in range(0, m):
         print(end=" ")
-    m = m - 1 
-    for j in range(0, i + 1 ):
+    m = m - 1
+    for j in range(0, i + 1):
         print("*", end=' ')
     print(" ")
 
@@ -76,19 +77,21 @@ for i in range(rows + 1, 0, -1):
     print(" ")
 
 
-
 # Exercise 4
 # Analyse this code before executing it. Write some commnts next to each line. Write the value of each variable and their changes, and add the final output. Try to understand the purpose of this program.
 
-my_list = [2, 24, 12, 354, 233] # Create a list of numbers
-for i in range(len(my_list) - 1): # Create a For Loop to check the length of 'my_list', we are counting every number within 'my_list' with a step of '-1'.
-    minimum = i # The variable 'minimum' is given the value 'i' 
-    for j in range(i + 1, len(my_list)): # Create a For Loop to count every number within 'my_list' starting with the variable 'i' + 1 unit
-        if(my_list[j] < my_list[minimum]): # An IF conditional for if my mist
-            minimum = j # The variable 'minimum' is given the value of 'j' in the conditional
-            if(minimum != i): # Another IF conditional: if 'minimum' is not equal to 'i'
-                my_list[i], my_list[minimum] = my_list[minimum], my_list[i] # then all the values inside 'my_list' are changed bewteen 'i' and 'minimum'
-print(my_list) # Call the function
+my_list = [2, 24, 12, 354, 233]  # Create a list of numbers
+# Create a For Loop to check the length of 'my_list', we are counting every number within 'my_list' with a step of '-1'.
+for i in range(len(my_list) - 1):
+    minimum = i  # The variable 'minimum' is given the value 'i'
+    # Create a For Loop to count every number within 'my_list' starting with the variable 'i' + 1 unit
+    for j in range(i + 1, len(my_list)):
+        if(my_list[j] < my_list[minimum]):  # An IF conditional for if my mist
+            minimum = j  # The variable 'minimum' is given the value of 'j' in the conditional
+            if(minimum != i):  # Another IF conditional: if 'minimum' is not equal to 'i'
+                # then all the values inside 'my_list' are changed bewteen 'i' and 'minimum'
+                my_list[i], my_list[minimum] = my_list[minimum], my_list[i]
+print(my_list)  # Call the function
 
 The final output is : [2, 12, 24, 233, 354]
 
