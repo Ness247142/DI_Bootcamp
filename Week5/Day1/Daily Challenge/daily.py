@@ -13,6 +13,7 @@
 # It should call the get_animal_types function. 
 # How would we make sure each of the animal names printed has a comma after it aside from the one before last (has an and after) and the last(has a period after)?.
 
+
 class Farm:
     def __init__(self, species):
         self.name = species
@@ -25,12 +26,10 @@ class Farm:
             self.animal_dict[animal] += number
 
     def get_info(self): 
-        print("Macdonald's farm")
-        print('')
+        print("Mcdonald's farm\n")
         for info in self.animal_dict.items():
             print(f"{info[0]}: {info[1]}")
-        print('')
-        print("    E-I-E-I-O!")
+        print("\tE-I-E-I-O!")
 
     def get_animal_types(self):
         animal_list = []
