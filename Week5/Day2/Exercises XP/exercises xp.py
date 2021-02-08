@@ -4,8 +4,6 @@
 # Instantiate the Pet class with all your cats. Use the variable my_pets
 # Output all of the cats walking using the my_pets instance
 
-# # Exercise_1
-
 class Pets():
     animals = []
     def __init__(self, animals):
@@ -220,7 +218,7 @@ class Incredibles(Family):
         except:
             print(f"{self.members['name']} you have no power!!")
 
-    def incredible_presentation(self):
+    def incredible_presentation(self, power, incredible_name):
         pass
 
 
