@@ -100,7 +100,7 @@ print("Today's Date : ", date.today())
 import datetime
 
 def january():
-    print(f"The January 1st is in {datetime.datetime(2022, 1, 1)-datetime.datetime.today().replace(microsecond=0)}")
+    print(f"January 1st is in {datetime.datetime(2022, 1, 1) - datetime.datetime.today().replace()}")
 
 print(january())
 
@@ -118,7 +118,7 @@ print("Today's Date : ",date.today())
 import datetime
 
 def next_holiday():
-    print(f"The next holiday, Purim, is in {datetime.datetime(2021, 2, 25)-datetime.datetime.today().replace(microsecond=0)}")
+    print(f"The next holiday in Israel, Purim, is in {datetime.datetime(2021, 2, 25)-datetime.datetime.today().replace()}")
     
 next_holiday()
 
