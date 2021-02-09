@@ -59,23 +59,27 @@ class DNA:
 
 
 
+
 c = Chromosome()
-c.value()
+print(c) 
+-> [1, 0, 1, 0, 0, 1, 1, 0, 0, 1]
 
 c.mutate()
+print(c)
+->[0, 0, 1, 1, 1, 0, 0, 0, 1, 0]
 
 d = DNA()
-d.value()
+print(d)
 
 
 gene1 = Gene()
-gene1.value()
+print(gene1)
 
 chromo1 = Chromosome()
-chromo1.value()
+print(chromo1)
 
 dna1 = DNA()
-dna1.value()
+print(dna1)
 
 
 class Organism(DNA):
