@@ -154,6 +154,10 @@ response.json()
 with open('sloths.html', 'w') as f:
 	f.write(response.text)
 
-
+for _ in range(10):
+    resp = requests.get("http://api.open-notify.org/iss-now")
+    data = resp.json()
+    print(data['iss_position']['latitude'], data['iss_position']['longitude'])
+    time.sleep(1)
 
 
