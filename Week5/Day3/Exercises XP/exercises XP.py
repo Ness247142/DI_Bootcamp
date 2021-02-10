@@ -21,10 +21,10 @@ def int(integer):
 print('')
 
 
-print(raw_input.__doc__)
+print(input.__doc__)
 
-def raw_input(values):
-    """raw_input function is used to get the values from the user. We call this function to tell the program to stop and wait for the user to input the values."""
+def input(values):
+    """The input() method reads a line from input, converts into a string and returns it."""
     pass
 print('')
 
@@ -33,46 +33,46 @@ print('')
 #Exercise 2
 
 class Currency:
-    def __init__(self, currency, value):
-        self.value = value
-        if self.value > 1:
-            self.currency = currency + "x"
+    def __init__(self, label, amount):
+        self.amount = amount
+        if self.amount > 1:
+            self.label = label
         else: 
-            self.currency = currency
+            self.label = ""
 
     
     def __str__(self):
-        return f"{self.value} {self.currency}"
+        return f"{self.amount} {self.label}"
 
     def __int__(self):
-        return self.value
+        return self.amount
 
     def __repr__(self):
-        return f"{self.value} {self.currency}"
+        return f"{self.amount} {self.label}"
 
     def __add__(self, other):
         if type(other) == int:
-            return self.value + other
-        elif self.currency == other.currency:
-                return self.value + other.value
+            return self.amount + other
+        elif self.label == other.label:
+                return self.amount + other.amount
         else:
-            print(f"TypeError: Cannot add between Currency type <{self.currency}> and <{other.currency}>")
+            print(f"TypeError: Cannot add between Currency type <{self.label}> and <{other.label}>")
 
     def __iadd__(self, other):
         if type(other) == int:
-            self.value = self.value + other
+            self.amount = self.amount + other
             return self
-        elif self.currency == other.currency:
-            self.value = self.value + other.value
+        elif self.label == other.label:
+            self.amount = self.amount + other.amount
             return self
         else:
-            print(f"TypeError: Cannot add between Currency type <{self.currency}> and <{other.currency}>")
+            print(f"TypeError: Cannot add between Currency type <{self.label}> and <{other.label}>")
 
 
-c1 = Currency('dollar', 5)
-c2 = Currency('dollar', 10)
-c3 = Currency('shekel', 1)
-c4 = Currency('shekel', 10)
+c1 = Currency('dollars', 5)
+c2 = Currency('dollars', 10)
+c3 = Currency('shekels', 1)
+c4 = Currency('shekels', 10)
 
 print(str(c1))
 print(int(c1))
@@ -85,6 +85,36 @@ print(c1)
 c1 += c2
 print(c1)
 print(c1 + c3)
+
+
+# #Jonathan's solution
+# class Currency:
+#     def __init__(self, label, amount):
+#         self.label = label
+#         self.amount = amount
+
+#     def __repr__(self):
+#         return f"{self.amount} {self.label}"
+
+#     def __add__(self, other):
+#         if isinstance(other, int):
+#             return Currency(self.label, self.amount + other)
+#         if self.label != other.label:
+#             raise CurrencyMismatch("Currency must be the same")
+
+#         return Currency(self.label, self.amount + other.amount)
+
+
+# class CurrencyMismatch(Exception):
+#     def __init__(self, message):
+#         super().__init__(self)
+#         self.message = message
+#         cprint.err(message)
+
+
+# c1 = Currency("dollar", 5)
+# c2 = Currency("dollar", 2)
+# c3 = Currency("euro", 4)
 
 
 
@@ -100,7 +130,7 @@ print("Today's Date : ", date.today())
 import datetime
 
 def january():
-    print(f"January 1st is in {datetime.datetime(2022, 1, 1) - datetime.datetime.today().replace()}")
+    print(f"The January 1st is in {datetime.datetime(2022, 1, 1)-datetime.datetime.today().replace(microsecond=0)}")
 
 print(january())
 
@@ -118,7 +148,7 @@ print("Today's Date : ",date.today())
 import datetime
 
 def next_holiday():
-    print(f"The next holiday in Israel, Purim, is in {datetime.datetime(2021, 2, 25)-datetime.datetime.today().replace()}")
+    print(f"The next holiday, Purim, is in {datetime.datetime(2021, 2, 25)-datetime.datetime.today().replace(microsecond=0)}")
     
 next_holiday()
 
