@@ -59,11 +59,11 @@ class Text:
     	"the_stranger.txt".close()
 
 	@classmethod
-    def text(cls, input_text):
+    def return_text(cls, input_text):
         return cls(input_text)
 
 if __name__ == '__main__':
-    obj = text()
+    obj = Text()
     newobj = obj.func() 
 
 
@@ -99,9 +99,15 @@ class TextModification(Text):
 		print nestr
 
  
+with open("the_stranger.txt", "r") as f:
+		data = f.readlines()
+		return data
 
-
-
-
-
-
+print(frequency)
+print(most_common_word)
+print(unique_word)
+print(text)
+print(return_text)
+print(text_no_punctuation)
+print(stop_words)
+print(no_special_characters)
