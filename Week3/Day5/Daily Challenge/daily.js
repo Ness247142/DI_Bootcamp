@@ -1,20 +1,24 @@
 
-let height = 7;
-let width = (2 * height) - 1;
+// FUNCTION to print the pattern of the letter 'A' in stars
 
-// FUNCTION to print the pattern of 'A' 
-function letterA() {
-    let n = width / 2, i, j;
-    for (let i = 0; i < height; i++) {
-        for (let j = 0; j <= width; j++) {
-            if (j == n || j == (width - n) || (i == height / 2 && j > n && j < (width - n)))
-                console.log("*");
-            else
-                console.log(" ");
-        }
-        console.log(" ");
-        n--;
+function letter_A() {
+  for (let i = 0; i < 7; i++) {
+    if (i == 0) {
+      console.log('  ***');
+    } else if (i == 1) {
+      console.log(' *   *');
+    } else if (i == 2) {
+      console.log(' *   *');
+    } else if (i == 3) {
+      console.log(' *****');
+    } else if (i == 4) {
+      console.log(' *   *');
+    } else if (i == 5) {
+      console.log(' *   *');
+    } else if (i == 6) {
+      console.log(' *   *');
     }
+  }
 }
 
-letterA(7);
+letter_A();
