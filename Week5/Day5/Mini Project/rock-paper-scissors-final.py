@@ -19,51 +19,33 @@
 # Return the results of the game as a string: win;draw;loss;, where win means that the user has won, draw means the user and the computer got the same item, and loss means that the user has lost.
 
 
-import game
+from game import Game
+game = Game()
 
 def get_user_menu_choice():
-	while True:
- 
-        # The Game Menu
-        print()
-        print("Let's Play!!!")
-        print("Enter 1 to play Rock-Paper-Scissors")
-        print("Enter 2 to quit")
-        print()
-
-        # Try block to handle the player choice 
-        try:
-            choice = int(input("Enter your choice = "))
-        except ValueError:
-            clear()
-            print("Wrong Choice")   
-            continue
- 
-def  main():
-	if choice == 1:
-		print(f"Your record is {win_count}-{lose_count}-{tie_count}")
-		game()
- 
-        # Quit the GAME LOOP    
-    elif choice == 2:
-    	print(f"Thanks for playing! Your final record was {win_count}-{lose_count}-{tie_count}")
-    	break
- 
-        # Other wrong input
-    else:
-    	clear()
-    	print("Wrong choice. Read instructions carefully.")
+    print("Menu:")
+    print("(y) Play at Rock-Paper-Scissors")
+    print("(x) Show the final scores and leave")
+    choice = str(input(": "))
+    return choice
 
 
-# The main function
-if __name__ == '__main__':
- 
-    # The mapping between moves and numbers
-    game_map = {0:"rock", 1:"paper", 2:"scissors"}
- 
-    # Win-lose matrix for traditional game
-    rps_table = [[-1, 1, 0], [1, -1, 2], [0, 2, -1]]
- 
-     
-    name = input("Enter your name: ")
- 
+def print_results(results):
+    print("Here are the results:")
+    for key, value in results.items():
+        print(key,value)
+    print("")
+
+
+def main():
+    while True:
+        menu = get_user_menu_choice()
+        while menu not in ("y", "x"):
+            menu = get_user_menu_choice()
+        if menu == "y":
+            results = game.play() 
+        else:
+            print_results(results)
+            return False
+
+print(main())
