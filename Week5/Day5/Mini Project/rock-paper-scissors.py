@@ -18,9 +18,15 @@
 # Print the output of the game; something like this: “You selected rock. The computer selected paper. You lose”, “You selected scissors. The computer selected scissors. You drew!”
 # Return the results of the game as a string: win;draw;loss;, where win means that the user has won, draw means the user and the computer got the same item, and loss means that the user has lost.
 
+import random
+import os
+import time
 
 from game import Game
 game = Game()
+
+def clear():
+    os.system("clear")
 
 def get_user_menu_choice():
     print("Menu:")
@@ -28,6 +34,8 @@ def get_user_menu_choice():
     print("(x) Show the final scores and leave")
     choice = str(input(": "))
     return choice
+    time.sleep(2)
+    clear()
 
 
 def print_results(results):
@@ -35,6 +43,8 @@ def print_results(results):
     for key, value in results.items():
         print(key,value)
     print("")
+    time.sleep(2)
+    clear()
 
 
 def main():
@@ -47,5 +57,7 @@ def main():
         else:
             print_results(results)
             return False
+        time.sleep(2)
+        clear()
 
 print(main())
