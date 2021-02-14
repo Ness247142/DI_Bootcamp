@@ -12,7 +12,7 @@
 SELECT * FROM items
 1	"Small Desk"	100
 2	"Large Desk"	300
-3	"Fan"		   80
+3	"Fan"		 80
 
 
 
@@ -24,7 +24,7 @@ SELECT * FROM items WHERE price > 80
 
 SELECT * FROM items WHERE price < 300
 1	"Small Desk"	100
-3	"Fan"		  80
+3	"Fan"		80
 
 
 
