@@ -24,5 +24,5 @@ INSERT INTO actors(first_name, last_name, age, number_oscars)
 VALUES('Tom', 'Hanks', '1956-07-09', 5)
 
 1	"Matt"	    "Damon"	    "1970-08-10"	5
-2	"George""Clooney"	 "1961-06-05"	2
-3	"Tom"	    "Hanks"	 "1956-07-09"	   5
+2	"George"    "Clooney"	  "1961-06-05"	2
+3	"Tom"	      "Hanks"	    "1956-07-09"	5
