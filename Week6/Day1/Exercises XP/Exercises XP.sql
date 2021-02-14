@@ -12,7 +12,7 @@
 SELECT * FROM items
 1	"Small Desk"	100
 2	"Large Desk"	300
-3	"Fan"		    80
+3	"Fan"		      80
 
 
 
@@ -24,12 +24,13 @@ SELECT * FROM items WHERE price > 80
 
 SELECT * FROM items WHERE price < 300
 1	"Small Desk"	100
-3	"Fan"		    80
+3	"Fan"		      80
 
 
 
 SELECT * FROM customers WHERE last_name = 'Smith' -- No. There is no result from this query
-5. SELECT * FROM customers WHERE last_name = 'Jones'
+
+SELECT * FROM customers WHERE last_name = 'Jones'
 1	"Greg"		"Jones"
 2	"Sandra"	"Jones"
 
