@@ -56,7 +56,7 @@ Q3. What will be the OUTPUT of the following statement?
 SELECT COUNT(*) 
 FROM FirstTab a WHERE a.Id NOT IN ( SELECT Id FROM SecondTab)
 
--- Output will be 2. The id of 5 and NULL from 'secondtab' are taken out
+-- Output will be 2. The id of 5 and NULL from 'SecondTab' are taken out
 
 
 Q4. What will be the OUTPUT of the following statement?
