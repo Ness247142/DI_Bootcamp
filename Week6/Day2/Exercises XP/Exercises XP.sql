@@ -1,4 +1,4 @@
--- Exercises 1
+-- # Exercise 1
 
 -- Use SQL to get the following from the database:
 
@@ -69,7 +69,7 @@ SELECT first_name, last_name, item_name FROM purchases JOIN customers ON purchas
 
 
 
--- Exercises 2
+-- # Exercise 2
 -- We will use the newly installed dvdrental database.
 
 
@@ -127,8 +127,4 @@ SELECT * FROM film INNER JOIN inventory ON film.film_id = inventory.film_id WHER
 
 -- Write a query to find which city is in which country.
 SELECT city, country FROM city INNER JOIN country ON country.country_id = country.country_id
-
-
-
-
 
