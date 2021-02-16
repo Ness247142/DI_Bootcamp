@@ -151,7 +151,7 @@ JOIN customer
 ON rental.customer_id = customer.customer_id
 WHERE customer.first_name = 'Matthew'
 AND customer.last_name = 'Mahan'
-AND film.title LIKE '%Boat%' 
-OR film.description LIKE '%Boat%'
+AND film.title LIKE '%boat%' 
+OR film.description LIKE '%boat%'
 ORDER BY film.replacement_cost DESC
 LIMIT 1
