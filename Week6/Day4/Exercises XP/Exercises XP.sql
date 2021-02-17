@@ -1,5 +1,5 @@
 
-Basic Select Statement
+Basic Select Statement:
 
 Write a query to display the names (first_name, last_name) using an alias name “First Name”, “Last Name” from employee table.
 SELECT first_name AS "First Name", last_name AS "Last Name" FROM employees
@@ -49,7 +49,8 @@ SELECT employee_id, first_name, last_name FROM employees LIMIT 10;
 
 
 
-Restricting And Sorting
+
+Restricting And Sorting:
 
 Write a query to display the name, including first_name and last_name and salary for all employees whose salary is between $10,000 and $15,000.
 SELECT first_name, last_name, salary FROM employees WHERE salary between 10000 and 15000
@@ -83,7 +84,8 @@ SELECT * FROM employees WHERE last_name IN('Jones', 'Blake', 'Scott', 'King', 'F
 
 
 
-Update Statement
+
+Update Statement:
 
 Write a SQL statement to change the email and commission_pct column of the employees table with ‘not available’ and 0.10 for all employees for those employees whose department_id is 110.
 UPDATE employees SET email= 'not available' WHERE department_id = 110
