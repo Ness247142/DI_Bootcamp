@@ -10,7 +10,6 @@ SELECT DISTINCT department_id FROM employees
 Write a query to get the details of all employees from the employee table in descending order by their first name.
 SELECT * FROM employees ORDER BY first_name DESC
 
-
 Write a query to get the names (first_name, last_name), salary and 15% of salary as PF (ie. alias) for all the employees.
 SELECT first_name, last_name, salary, salary*0.15 as PF FROM employees
 
@@ -95,6 +94,7 @@ UPDATE employees SET email='available' WHERE department_id=(SELECT department_id
 
 Write a SQL statement to change the salary of an employee to 8000 whose ID is 105, if the existing salary is less than 5000.
 UPDATE employees SET salary= 8000 WHERE employee_id=105 AND salary < 5000
+
 
 Write a SQL statement to increase the salary of employees under the department 40, 90 and 110 according to the company rules that, the salary will be increased by 25% of the department 40, 15% for department 90 and 10% of the department 110 and the rest of the department will remain same.
 UPDATE employees SET salary= CASE department_id 
