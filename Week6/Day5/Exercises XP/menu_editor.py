@@ -1,6 +1,5 @@
 
 from menu_manager import MenuManager
-import sqlite3 as sl
 
 def load_manager():
 	MenuManager()
