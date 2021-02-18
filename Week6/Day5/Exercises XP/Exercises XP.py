@@ -9,31 +9,6 @@
 # Write a class method get_by_name that will return a single MenuItem object based off of a string, if an object is not found return None
 
 
-# {
-#     "items": [
-#         {
-#             "name": "Vegetable soup",
-#             "price": 30
-#         },
-#         {
-#             "name": "Hamburger",
-#             "price": 44.9
-#         },
-#         {
-#             "name": "Milkshake",
-#             "price": 22.5
-#         },
-#         {
-#             "name": "Artichoke",
-#             "price": 18
-#         },
-#         {
-#             "name": "Beef stew",
-#             "price": 52.5
-#         }
-#     ]
-# }
-
 
 import sqlite3 as sl
 
