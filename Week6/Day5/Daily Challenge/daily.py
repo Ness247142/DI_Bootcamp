@@ -2,26 +2,39 @@
 # Using the following API{:.hi-vis, create a script that will write 10 random countries to your database
 # Attributes to save: name, flag, subregion, population
 
-import sqlite3 as sl
+
+import sqlite3
 import requests
+import json
 import random
+import psycopg2
+import pprint
 
-connection = sl.connect('database.db')
+countries_api = requests.get('https://restcountries.eu/rest/v2/all')
 
-cursor = connection.cursor()
+countries = countries_api.json()
 
+pprint.pprint(type(countries))
 
-for i in range(10):
-	data = requests.get('https://restcountries.eu/rest/v2/name/united'['name']['flag']['subregion']['population'])
-	data = data.json()
-	country = data['value']
-	country = country.replace('"', '`')
-	country = country.replace("'", '`')
-	query = f"INSERT INTO countries (country) VALUES('{country}')"
-	cursor.execute(query)
+name = countries['name']
+flag = name['flag']
+subregion = name['subregion']
+population = name['population']
 
-connection.commit()
+print(name)
+print(subregion)
 
-connection.close()
+conn = sqlite3.connect('country.db')
+c = conn.cursor()
+
+c.execute("DROP TABLE IF EXISTS countries")
+
+c.execute("CREATE TABLE countries (id SERIAL PRIMARY KEY, name VARCHAR(50) NOT NULL, flag l
+	  
+for country in countries:
+        c.execute("INSERT INTO countries (name, flag,subregion, population) VALUES ('{name}
+        conn.commit()
+		  
+conn.close()
 
 
