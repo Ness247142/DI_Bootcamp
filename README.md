@@ -1,3 +1,3 @@
 DI_Bootcamp
 
-My personal repository for all the important files and works done during the Developers Institute Bootcamp in January 2021
+My personal repository for all the important files and assignments done during the Full Stack Coding Bootcamp - Python at Developers Institute (January-March 2021).
