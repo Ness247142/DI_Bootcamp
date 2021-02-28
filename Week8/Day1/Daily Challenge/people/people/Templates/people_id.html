@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<h1>This is the people_id page</h1>
+    {% for people in persons %}
+        <br>
+        <h3>ID: {{people.id}}</h3>
+    {% endfor %}
+{% endblock %}
