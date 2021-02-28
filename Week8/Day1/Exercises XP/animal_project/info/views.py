@@ -1,25 +1,34 @@
-from django.shortcuts import render  # this line is added automatically
-from django.http import HttpResponse  # pass view information into the browser
+from django.shortcuts import render
+from django.http import HttpResponse
+import json
 
-with open('animal_info.json') as fl:
-    data = json.load(fl)
+with open('animal.json') as f:
+    data = json.load(f)
 
-def family(request, family_id):
-	pass
+def family(request, families_id):
+    family_list = data['animals']
+    context = {}
 
+    context['animals'] = []
+    for an_animal in family_list:
+        if an_animal['id'] == families_id:
+            context['animals'].append(an_animal)
 
-def animals(request, animal_id):
-	family_list = data['animals']
-	context = {}
+    html = render(request, 'family.html', context)
+    return html
 
-	for list_item in family_list:
-		if animals_id == list_item['id']:
-			context['name'] = list_item['name']
+def animal(request, animals_id):
+    animal_list = data['animals']
+    context = {}
 
-	context['animals'] = []
-	for fam_animal in data['animals']:
-		if fam_animal['family'] == animals_id:
-			context['animals'].append(fam_animal)
+    for list_item in animal_list:
+        if animals_id == list_item['id']:
+            context['name'] = list_item['name']
 
-	    html = render(request, 'animal.html', context)
-	    return html
+    context['animals'] = []
+    for animals in data['animals']:
+        if animals['family'] == animals_id:
+            context['animals'].append(animals)
+
+    html = render(request, 'animal.html', context)
+    return html
