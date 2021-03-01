@@ -1,12 +1,17 @@
 {% extends 'base.html' %}
 
-{% block title %}{% endblock %}
+{% load static %}
+
+{% block title %}{{animal.id}}{% endblock %}
 
 {% block content %}
 
-<h1>This is the family page</h1>
-    {% for animal in animals %}
-        <br>
+<h1>Welcome to the animal page</h1>
+
+    {% for animal in family.animal_set.all %}
+
         <h3>Name: {{animal.name}}</h3>
+        
     {% endfor %}
+
 {% endblock %}
