@@ -1,32 +1,22 @@
 from django.shortcuts import render
-import json
+from .models import Family, Animal
 
+# Create your views here.
+def family(request, family_id):
+    fam = Family.objects.get(id=family_id)
+    animals = Animal.objects.filter(family=fam)
+    context = {
+        'family': fam,
+        'animals': animals
+        }
+    return render(request, 'family.html', context)
 
-def all_animals(request):
-    return render(request, 'animals_info.py', get_animals_data())
-
-
-def single_animal(request, id):
-    data = get_animals_data()
-    if id > 0 and id <= len(data['animals']):
-        single_animal = data['animals'][id - 1]
-        return render(request, 'animal.html', {'animal': single_animal})
-
-
-def get_animals_data():
-    with open('animals.json', 'r') as f:
-        data = json.load(f)
-    return data
-
-
-def family(request, id):
-    pass
-
-
-def animal(request, id):
-    pass
-
+def animal(request, animal_id):
+    animals = Animal.objects.get(id=animal_id)
+    context = {'animal': animal}
+    return render(request, 'animal.html', context)
 
 def animals(request):
-    f = open("animals_info.py", "r")
-    print(f.read())
+    animals_all = Animal.objects.all()
+    context = {'animals_all': animals_all}
+    return render(request, 'animals.html', context)
