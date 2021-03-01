@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}{{animal.id}}{% endblock %}
+
+{% block content %}
+
+<h1>Welcome to the animals page</h1>
+
+    {% for animal in animals_all %}
+
+        <h3>Name: {{animal.name}}</h3>
+
+    {% endfor %}
+
+{% endblock %}
