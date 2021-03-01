@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<h1>This is the Name page</h1>
+{% for phone in phone_number %}
+<br>
+<h3>ID: {{phone_number.name}}</h3>
+<h3>Name: {{phone_number.legs}}</h3>
+<h3>Email: {{phone_number.weight}}</h3>
+<h3>Phone Number: {{phone_number.height}}</h3>
+<h3>Address: {{phone_number.speed}}</h3>
+{% endfor %}
+{% endblock %}
