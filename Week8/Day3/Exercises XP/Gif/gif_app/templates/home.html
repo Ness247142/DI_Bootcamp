@@ -1,14 +1,15 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}{% endblock %}
+
 {% block content %}
-<h1>Welcome to Gifs Home Page.</h1>
 
+    {% for gif in gifs %}
+        <div class="div_img">
+            <a href="{% url 'gif_presentation' gif_app.id %}"><img src="{{gif_app.url}}" alt="{{gif_app.title}}"></a>
+        </div>
+    {% endfor %}
 
-{% endfor %}
-{% else %}
-{% endif %}
-
-<a class="btn btn-primary" href="/missions/elon/">About Our Glorious Leader (Not Kim Jong Un)</a>
-
-
-
-{% block title%}Gifs Page
 {% endblock %}
