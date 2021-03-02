@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Gif, Category
+from .models import *
 
 admin.site.register(Gif)
 admin.site.register(Category)
