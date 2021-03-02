@@ -1,16 +1,18 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from .models import *
+
 
 def home(request):
     gifs = Gif.objects.all()
     context = {'gifs': gifs}
-    return render(request, 'home.html', context)
+    return render(request, 'main.html', context)
 
 def gif_presentation(request, gif_id):
-    gifs = Gif.objects.get(id=gif_id)
-    context = {'gifs': gifs}
+    gif = Gif.objects.get(id=gif_id)
+    context = {'gif_app': gif}
     return render(request, 'gif_presentation.html', context)
 
-def categories(request):
-    pass
+def category(request):
+    category_gif = Categories.objects.all()
+    context = {'category': category_gif}
+    return render(request, 'category.html', context)
