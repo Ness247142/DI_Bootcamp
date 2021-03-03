@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to SpaceX Missions Home Page.</h1>
+
+    <h3>Mission Director</h3>
+    <h2>{{director.upper}}</h2>
+
+
+    {% if all_missions %}
+        <h3>Upcoming Missions</h3>
+        {% for mission in all_missions %}
+        <p>
+            {% if mission.training_mission %}
+            <a href="{% url 'mission' mission.id %}" class="text-success">{{mission.name}}</a>
+            {% else %}
+            <a href="{% url 'mission' mission.id %}" class="text-danger">{{mission.name}}</a>
+            {% endif %}
+        </p>
+        {% endfor %}
+    {% else %}
+        <h3 style="color:red">There are no upcoming missions. Send Help!</h3>
+    {% endif %}
+    
+    <a class="btn btn-primary" href="{% url 'elon' %}">About Our Glorious Leader (Not Kim Jong Un)</a>
+    <a class="btn btn-success" href="{% url 'astronauts' %}">Astronauts</a>
+
+{% endblock %}
+
+
+{% block title%}Missions Page{% endblock %}

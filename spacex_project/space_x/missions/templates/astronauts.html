@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Our Famous Astros</h1>
+
+    {% if astronauts %}
+        <h3>Pilots</h3>
+        {% for astro in astronauts %}
+        <p>
+            {{astro}}
+        </p>
+        {% endfor %}
+    {% endif %}
+    
+    <a class="btn btn-primary" href="{% url 'home' %}">Home</a>
+    <a class="btn btn-success" href="{% url 'add-astronaut' %}">Add Astronaut</a>
+
+{% endblock %}
+
+
+{% block title%}Missions Page{% endblock %}
