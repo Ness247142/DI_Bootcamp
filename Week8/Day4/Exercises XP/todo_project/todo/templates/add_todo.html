@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Add To-Do List</h1>
+<form method="POST">
+    {% csrf_token %}
+    <table>
+        {{myform.as_table}}
+    </table>
+    <input type="submit">
+</form><br>
+
+<a class="btn btn-primary" href="{% url 'display_todos' %}">Go back Home</a>
+
+{% endblock %}
