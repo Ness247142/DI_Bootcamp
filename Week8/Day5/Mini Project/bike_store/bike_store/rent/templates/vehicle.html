@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<h1>List of all Vehicles</h1>
+
+{% if vehicles %}
+<h3>Vehicles</h3>
+{% for vehicle in vehicles %}
+<p>
+    {{vehicle}}
+</p>
+{% endfor %}
+{% endif %}
+
+<a class="btn btn-primary" href="{% url 'home' %}">Home</a>
+
+{% endblock %}
+
+
+{% block title%}Vehicle Page{% endblock %}

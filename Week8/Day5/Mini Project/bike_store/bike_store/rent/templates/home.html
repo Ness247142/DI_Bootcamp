@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}{{rent.id}}{% endblock %}
+
+{% block content %}
+
+<h1>Welcome to B&S Renting</h1>
+
+<p>
+    <a class="btn btn-primary" href="{% url 'rental' %}">List of all rentals</a>
+</p>
+<p>
+    <a class="btn btn-success" href="{% url 'rental_id' 1 %}">Information about the given rental</a>
+</p>
+<p>
+    <a class="btn btn-secondary" href="{% url 'rental_add' %}">Enter a customer ID and a vehicle ID to create a
+        rental.</a>
+</p>
+<p>
+    <a class="btn btn-danger" href="{% url 'customer_id' 1 %}">Show the customer matching the given ID</a>
+</p>
+<p>
+    <a class="btn btn-warning" href="{% url 'customer' %}">List of all customers</a>
+</p>
+<p>
+    <a class="btn btn-info" href="{% url 'customer_add' %}">Add a new customer</a>
+</p>
+<p>
+    <a class="btn btn-bright" href="{% url 'vehicle' %}">List of all vehicles</a>
+</p>
+<p>
+    <a class="btn btn-dark" href="{% url 'vehicle_id' 1 %}">Show specific vehicle</a>
+</p>
+<p>
+    <a class="btn btn-link" href="{% url 'vehicle_add' %}">Add a new Vehicle</a>
+</p>
+
+
+{% endblock %}

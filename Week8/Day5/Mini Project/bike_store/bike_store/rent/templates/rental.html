@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<h1>List of all Rentals</h1>
+
+{% if rental %}
+<h3>Rentals</h3>
+{% for rental in rentals %}
+<p>
+    {{rental}}
+</p>
+{% endfor %}
+{% endif %}
+
+<a class="btn btn-primary" href="{% url 'home' %}">Home</a>
+
+{% endblock %}
+
+
+{% block title%}Rental Page{% endblock %}
