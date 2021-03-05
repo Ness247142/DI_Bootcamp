@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Rental{% endblock %}
+
+
+{% block content %}
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Link</th>
+            <th>Customer</th>
+            <th>Vehicle</th>
+            <th>Rental Date</th>
+            <th>Return Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for rental in my_rental %}
+        <tr>
+            <td><a href="{% url 'customer' %}">To Customer</a></td>
+            <td>{{rental.customer}}</td>
+            <td>{{rental.vehicle}}</td>
+            <td>{{rental.rental_date}}</td>
+            <td>{{rental.return_date}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a class="btn btn-primary" href="{% url 'home' %}">Home</a>
+
+{% endblock %}
+
+
+{% block title%}Rental Page{% endblock %}
