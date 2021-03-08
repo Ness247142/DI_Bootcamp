@@ -1,0 +1,33 @@
+{% extends 'partials/base.html' %}
+
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+
+{% include 'partials/navbar.html' %}
+
+
+
+<div class="container-fluid">
+    <h3>All new movies</h3>
+    {% for film in films %}
+    <div class="card" style="width: 20rem;">
+        <div class="card-body">
+            <h4 class="card-title">{{film.title}} BY {% for name in film.director.all %} {{name.first_name}}
+                {{name.last_name}} {% endfor %}</h4>
+            <p class="card-text">Release Date: {{film.release_date}}</p>
+            <p class="card-text">Category: {% for catego in film.category.all %} {{catego}} {% endfor %}</p>
+            <p class="card-text"> Available in: {% for count in film.available_in_country.all %} {{count}} {% endfor %}
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
