@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import *
 from .forms import *
-from django.views import generic
+from cprint import cprint
+from django.http import HttpResponse
+from django.http import Http404
+from django.views.generic import ListView, DetailView, CreateView
 from django.urls import reverse_lazy
 
 
