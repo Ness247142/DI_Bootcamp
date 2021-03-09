@@ -1,0 +1,32 @@
+{% extends 'partials/base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+
+{% include 'partials/navbar.html' %}
+
+<div class="container-fluid">
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Profile of {{my_profile.get_full_name}}</h5>
+                    <p class="card-text">Username: {{my_profile.username}}</p>
+                    <p class="card-text">First name: {{my_profile.first_name}}</p>
+                    <p class="card-text">Last name: {{my_profile.last_name}}</p>
+                    <p class="card-text">Email: {{my_profile.email}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
