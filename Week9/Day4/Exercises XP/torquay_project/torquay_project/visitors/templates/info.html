@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+
+{% block title %}Info page{% endblock %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+
+
+<div class="container-fluid">
+    <h3>All Info</h3>
+    {% for info in infos %}
+    <div class="card" style="width: 20rem;">
+        <div class="card-body">
+            <h4 class="card-title">{% endfor %}</h4>
+            <p class="card-text"></p>
+            <p class="card-text"></p>
+            <p class="card-text"> {% endfor %}
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
