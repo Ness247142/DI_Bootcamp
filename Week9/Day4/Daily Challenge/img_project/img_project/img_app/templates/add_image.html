@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Add Images</h1>
+<div class="form-group">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table>
+            {{myform.as_table}}
+        </table>
+        <button class="btn btn-secondary">Submit</button>
+    </form>
+</div>
+
+</ul>
+
+<a class="btn btn-primary" href="{% url 'home' %}">Home</a>
+
+
+{% endblock %}

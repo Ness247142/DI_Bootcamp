@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h1>Login page</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ myform|crispy }}
+    <button>Login</button>
+</form><br>
+<a class="btn btn-primary" href="{% url 'home' %}">Home</a>
+
+{% endblock %}
