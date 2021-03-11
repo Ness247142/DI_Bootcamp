@@ -1,1 +1,1 @@
-# Community
+# Django Forum App
