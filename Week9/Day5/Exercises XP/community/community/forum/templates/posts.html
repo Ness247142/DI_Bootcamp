@@ -1,0 +1,14 @@
+{% extends 'registration/base.html' %}
+
+{% block content %}
+{{ block.super }}
+<h4>Today we are going to talk about : </h4>
+{% for x in posts %}
+<ul>
+    <li>{{ x.title | title }} by {{ x.author}}
+        <span class="spanposts">{{x.released_date | date:"d M Y"}}</span>
+    </li>
+</ul>
+<div class="divposts">{{ x.text }}</div>
+{% endfor %}
+{% endblock content %}
