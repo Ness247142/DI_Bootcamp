@@ -8,27 +8,33 @@
 <h1>All Customers</h1>
 
 <table class="table table-hover">
-    <tr>
-        <th>Lastname</th>
-        <th>Firstname</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Address</th>
-        <th>City</th>
-        <th>Country</th>
-    </tr>
-    {% for customer in my_customer %}
-    <tr>
-        <td>{{customer.last_name}}</td>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">City</th>
+        <th scope="col">Country</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    {% for customer in Customers %}
+    <tbody>
+      <tr>
+        <th scope="row">{{customer.id}}</th>
         <td>{{customer.first_name}}</td>
+        <td>{{customer.last_name}}</td>
         <td>{{customer.email}}</td>
         <td>{{customer.phone_number}}</td>
-        <td>{{customer.address}}</td>
         <td>{{customer.city}}</td>
         <td>{{customer.country}}</td>
-    </tr>
+        <td><a href="">Check</a></td>
+      </tr>
+    </tbody>
     {% endfor %}
-</table>
+  </table>        
 
 <a class="btn btn-primary" href="{% url 'home' %}">Home</a>
 
