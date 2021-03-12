@@ -205,7 +205,7 @@ h4 {
 	line-height: 2;
 }
 
-.portfolio img {
+.projects img {
 	height: 15rem;
 	width: 100%;
 	margin: 1em;
@@ -228,11 +228,12 @@ h4 {
 	padding: 2em;
 }
 
-.team .item {
+.skills .item {
 	position: relative;
+	padding: 2em;
 }
 
-.team .des {
+.skills .des {
 	background: rgb(0, 60, 128);
 	color: #fff;
 	text-align: center;
@@ -240,12 +241,12 @@ h4 {
 	width: 100%;
 }
 
-.team .item:hover .des {
+.skills .item:hover .des {
 	height: 100%;
-	background: #f974005b;
+	background: #f9740080;
 	position: absolute;
 	width: 100%;
-	padding: 5em;
+	padding: 2em;
 	bottom: 0;
 	border-bottom-left-radius: 0;
 	transition: .3s ease-in-out;
