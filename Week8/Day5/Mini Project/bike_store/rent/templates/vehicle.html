@@ -8,21 +8,26 @@
 <h1>All Vehicles</h1>
 
 {% for vehicle in my_vehicle %}
-<div style="display: inline-flex; width:20%;">
-    <table class="table table-hover">
-        <tr>
-            <th>{{vehicle.name}}</th>
-        </tr>
-        {% for v in vehicle.vehicle_set.all %}
-        <tr>
-            <td>
-                {{v.size}}
-            </td> 
-        </tr>
-        {% endfor %}
-    </table>
-</div>
-
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Vehicule Type</th>
+        <th scope="col">Vehicule Size</th>
+        <th scope="col">Rental Rate</th>
+      </tr>
+    </thead>
+    {% for vehicle in Vehicles %}
+    <tbody>
+      <tr>
+        <th scope="row">{{vehicle.id}}</th>
+        <td>{{vehicle.vehicle_type}}</td>
+        <td>{{vehicle.size}}</td>
+        <td>{{vehicle.daily_rate}}</td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>      
 <a class="btn btn-primary" href="{% url 'home' %}">Home</a>
 
 {% endblock %}
