@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h1>Add Mission</h1>
+<div class="row">
+    <div class="col col-4">
+        <form method="POST" autocomplete="off">
+            {% csrf_token %}
+            {{form|crispy}}
+            <button class="btn btn-primary" type="submit">Add</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+

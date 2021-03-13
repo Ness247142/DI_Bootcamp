@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Add Astronaut</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            {{myform.as_table}}
+        </table>
+        <input type="submit">
+    </form>
+
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+
+{% endblock %}
+

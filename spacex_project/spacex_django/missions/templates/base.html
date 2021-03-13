@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <img src="https://i.imgur.com/pkIJHAE.png" alt="" height=100px width=100%>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    {% block js %}
+    {% endblock %}
+</body>
+</html>
+
+

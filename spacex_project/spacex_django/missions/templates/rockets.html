@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Our Rockets</h1>
+{% for rocket in rocket_list %}
+    <p><a href="{% url 'rocket-details' rocket.id %}">{{rocket}}</a></p>
+{% endfor %}
+<p>
+    <a class="btn btn-primary" href="{% url 'add-rocket' %}">Add</a>
+    <a class="btn btn-secondary" href="{% url 'home' %}">Back</a>
+</p>
+{% endblock %}
+

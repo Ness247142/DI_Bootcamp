@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>My name is Elon Musk.</h1>
+
+    <img src="{% static 'images/elon.png' %}" alt="" width=150px height=300px>
+    
+    <p>
+        <a class="btn btn-success mt-4" href="{% url 'home' %}">
+            Back to Home
+        </a>
+
+        <a class="btn btn-warning ml-4 mt-4" href="{% url 'tesla' %}"  target="_blank">
+            About Tesla
+        </a>
+
+        <a class="btn btn-primary ml-4 mt-4" href="{% url 'login' %}">
+            Login
+        </a>
+    </p>
+{% endblock %}
+
+
+{% block title%}ELONS Page{% endblock %}

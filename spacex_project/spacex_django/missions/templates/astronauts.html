@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Our Famous Astros</h1>
+
+    {% if astronauts %}
+        <h3>Pilots</h3>
+        <table class="table table-border table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Likes</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for astro in astronauts %}
+                <tr>
+                    <td>{{astro}}</td>
+                    <td id="astro_like_{{astro.id}}">{{astro.likes}}</td>
+                    <td>
+                        <button type='button' action="like" astro_id={{astro.id}} class="btn btn-primary btn-sm">Like</button>
+                        <button type='button' action="dislike" astro_id={{astro.id}} class="btn btn-danger btn-sm">Dislike</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    {% endif %}
+    
+    <a class="btn btn-primary" href="{% url 'home' %}">Home</a>
+    <a class="btn btn-success" href="{% url 'add-astronaut' %}">Add Astronaut</a>
+    
+{% endblock %}
+
+
+{% block js %}
+        <script type="text/javascript">
+
+            const url = "{% url 'like-astro' %}"
+
+             // add event listner
+             document.querySelector('table').addEventListener('click', function(event){
+                // listen for clicks on the like buttons
+                if (event.target.type != 'button'){
+                    return;
+                }
+
+                // extract the astro id from the like button
+                const astro_id = event.target.getAttribute("astro_id");
+                const action = event.target.getAttribute("action");
+                const csrftoken = getCookie('csrftoken');
+                const data = {'astro_id': astro_id, 'action':action}
+                
+                // fetch to the server, sending that id.
+                fetch(url, {
+                    headers: {'X-CSRFToken': csrftoken},
+                    method: 'post',
+                    body: (JSON.stringify(data)),
+                })
+                .then(response => response.json())
+                .then(data => update_astro(data, astro_id))
+            }) 
+
+            function update_astro(data, astro_id){
+                const id = "astro_like_" + astro_id
+                target = document.getElementById(id)
+                target.innerHTML = data.likes
+            }
+            
+            // Django's way to get a csrf token.
+
+            function getCookie(name) {
+                let cookieValue = null;
+                if (document.cookie && document.cookie !== '') {
+                    const cookies = document.cookie.split(';');
+                    for (let i = 0; i < cookies.length; i++) {
+                        const cookie = cookies[i].trim();
+                        // Does this cookie string begin with the name we want?
+                        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                            break;
+                        }
+                    }
+                }
+                return cookieValue;
+            }
+            
+
+                
+
+            // response returns.... update the dom
+        </script>
+{% endblock %}
+
+
+{% block title%}Missions Page{% endblock %}

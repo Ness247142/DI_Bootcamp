@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>The Rockets</h1>
+<h1>{{msg}}</h1>
+<p>Name: {{rocket.name}}</p> 
+<p>Fuel Capacity: {{rocket.fuel_capacity}} (litres)</p> 
+<p>Max Weight: {{rocket.max_weight}} Kg</p> 
+<p>Thrust: {{rocket.thrust}} Nm/s</p> 
+<p>
+    <img src="{{rocket.image}}" alt="" width=100px height=200px>
+</p>
+<a class="btn btn-secondary" href="{% url 'see-rockets' %}">Back</a>
+</p>
+{% endblock %}
+

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h1>This is a signup page</h1>
+<div class="row">
+    <div class="col col-6">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form|crispy }} 
+
+            <!-- <label for="id_username" class=" requiredField">
+                Username<span class="asteriskField">*</span> 
+            </label>
+            <input type="text" name="username" maxlength="150" autofocus="" class="textinput textInput form-control" required="" id="id_username">
+            <label for="id_password1" class=" requiredField">
+                Password<span class="asteriskField">*</span> 
+            </label>
+            <input type="password" name="password1" autocomplete="new-password" class="textinput textInput form-control" required="" id="id_password1"> -->
+            <button>Signup</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

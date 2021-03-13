@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Mission Details</h1>
+    <h3>{{mission.name}}</h3>
+    <h4>Piloted By: {{mission.pilot}}</h4>
+    <h4>Launch Date: {{mission.launch_date}}</h4>
+
+    {% if not mission.training_mission %}
+        <p class="text-danger"> This is not a drill!</p>
+    {% else %}
+        <p class="text-success"> Enjoy the Simulation</p>
+    {% endif %}
+
+
+    <div style="display: flex; justify-content: space-evenly;">
+        {% for rocket in mission.all_rockets.all %}
+        <div>
+            <img src="{{rocket.image}}" alt="" width=100px height=200px>
+            <h4>{{rocket.name}}</h4>
+        </div>
+        {% endfor %}
+    </div>
+    
+
+    <a class="btn btn-primary" href="{% url 'home' %}">Back to Home</a>
+{% endblock %}

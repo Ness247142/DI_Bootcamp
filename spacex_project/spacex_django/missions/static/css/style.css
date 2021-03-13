@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+}
+
+
+.messages .info {
+    color: blue;
+}
+
+.messages .success {
+    color: green;
+}
+
+.messages .warning {
+    color: red;
+}
