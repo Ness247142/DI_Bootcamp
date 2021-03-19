@@ -89,12 +89,14 @@ section h1, article h1 {
 }
 
 .filterDiv {
-	color: #ffffff;
-	width: 100%;
-	line-height: 100px;
+	margin-top: 5px;
+	overflow: hidden;
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
 	text-align: center;
-	margin: 2px;
-	display: none;
 }
 
 .show {
@@ -230,7 +232,7 @@ h4 {
 
 .skills .item {
 	position: relative;
-	padding: 2em;
+	padding: 3em;
 }
 
 .skills .des {
