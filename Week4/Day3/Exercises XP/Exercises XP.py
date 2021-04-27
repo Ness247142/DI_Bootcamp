@@ -131,7 +131,7 @@ print(disney_users_C)
 
 
 for name in users:
-	if "i" in name and name[0] in ["m", "p"]:
+	if "i" in name and name[0] in ["M", "P"]:
 		print(name)
 
 
