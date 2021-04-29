@@ -1,11 +1,11 @@
-## Useful Tools for Portfolio
+# Useful Tools for Portfolio
 
 ![](https://www.freecodecamp.org/news/content/images/2020/04/screely-1586183781361.png)
 
-# Here is a list of useful tools for start-ups and the growth of your web business.
+## Here is a list of useful tools for start-ups and the growth of your web business.
 
 
-Scraping Tools:
+### Scraping Tools:
 
 1) Apify
 
@@ -29,7 +29,7 @@ DataMiner is a Google Chrome and Microsoft Edge browser extension that helps you
 
 
 
-Automation Tools:
+### Automation Tools:
 
 1) ZennoPoster
 
