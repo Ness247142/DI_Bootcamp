@@ -31,26 +31,48 @@ ParseHub is a free and powerful web scraping tool. With our advanced web scraper
 
 ### Automation Tools
 
-1. ZennoPoster
+1. [ZennoPoster](https://zennolab.com/en/products/zennoposter/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
 
 ZennoPoster is intended for SEO-experts, webmasters and people engaged in vigorous activity on the Internet. The software allows to record human actions on websites, blogs, forums (filling in forms, clicks on links, post messages) and repeat them in multiple threads (Professional version). The program also provides anonymity through proxies, processed by powerful built-in proxychecker.
 
-2. Katalon Studio
+2. [Katalon Studio](https://www.katalon.com/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
 
 Katalon Studio is an automation testing solution developed by Katalon, Inc. The software is built on top of the open-source automation frameworks Selenium, Appium with a specialized IDE interface for web, API, mobile and desktop application testing.
 
-3. Phantombuster
+3. [Phantombuster](https://phantombuster.com/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
 
 Chain actions and data extraction on the web to generate business leads, marketing audiences and overall growth. Phantombuster gives you the tools and know-how to grow your business faster.
 
-4. iMacros
+4. [iMacros](https://www.progress.com/imacros?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
 
 With over 10+ million downloads, iMacros is the world’s most popular web automation, data extraction, and web testing solution. Why not use iMacros to take charge of your web automation needs today?
 
-5. Selenium
+5. [Selenium](https://www.selenium.dev)
 
 Automate any website and web application the agile way: No-code. Build superfast automation powered by Selenium, the leading browser automation framework. 100% codeless.
 
+
+### Collaboration Tools
+
+1. [Yanado](https://yanado.com/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
+
+No need to waste time jumping between Gmail and project management tools. Manage your projects with Yanado right inside your Gmail. Stop losing focus and get the job done.
+
+2. [Trello](https://trello.com/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
+
+Trello is the visual collaboration platform that gives teams perspective on projects . Use Trello to collaborate, communicate and coordinate on all of your projects.
+
+3. [Notion.so](https://www.notion.so/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
+
+A new tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team.
+
+4. [Slack](https://slack.com/intl/fr-fr/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
+
+Slack is a new way to communicate with your team. It's faster, better organized, and more secure than email.
+
+5. [App.azendoo](https://www.azendoo.com/en/)
+
+Move from conversation to action. Plan, organize, collaborate and analyze your teamwork in one place.
 
 
 
