@@ -5,7 +5,7 @@
 ## Here is a list of useful tools for start-ups and the growth of your web business.
 
 
-### Scraping Tools:
+### Scraping Tools
 
 1. [Apify](https://apify.com).
 
@@ -29,7 +29,7 @@ ParseHub is a free and powerful web scraping tool. With our advanced web scraper
 
 
 
-### Automation Tools:
+### Automation Tools
 
 1. ZennoPoster
 
