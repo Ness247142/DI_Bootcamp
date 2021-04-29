@@ -8,9 +8,11 @@ Here is a list of useful tools for start-ups and the growth of your web business
 Scraping Tools:
 
 1) Apify
+
 Apify can automate anything you can do manually in a web browser, and run it at scale. Turn any website into an API and make the web work for you!
 
 2) Mozenda
+
 Web scraping software - Billions Of Web Pages Scraped Since 2007. Compare Product & Service Options. 1/3 of fortune 500 companies trust Mozenda.
 
 3) FMiner
