@@ -5,7 +5,7 @@
 ## Here is a list of useful tools for start-ups and the growth of your web business.
 
 
-### Scraping Tools
+## Scraping Tools
 
 1. [Apify](https://apify.com).
 
@@ -29,7 +29,7 @@ ParseHub is a free and powerful web scraping tool. With our advanced web scraper
 
 
 
-### Automation Tools
+## Automation Tools
 
 1. [ZennoPoster](https://zennolab.com/en/products/zennoposter/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
 
@@ -52,7 +52,7 @@ With over 10+ million downloads, iMacros is the world’s most popular web autom
 Automate any website and web application the agile way: No-code. Build superfast automation powered by Selenium, the leading browser automation framework. 100% codeless.
 
 
-### Collaboration Tools
+## Collaboration Tools
 
 1. [Yanado](https://yanado.com/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
 
