@@ -2,7 +2,7 @@
 
 ![](https://www.freecodecamp.org/news/content/images/2020/04/screely-1586183781361.png)
 
-## Here is a list of useful tools for start-ups and the growth of your web business.
+## Lists of useful tools for start-ups and the growth of your web business.
 
 
 ## Scraping Tools
