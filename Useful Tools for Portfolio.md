@@ -7,7 +7,7 @@
 
 ### Scraping Tools:
 
-1. Apify
+1. [Apify](https://apify.com).
 
 Apify can automate anything you can do manually in a web browser, and run it at scale. Turn any website into an API and make the web work for you!
 
@@ -27,7 +27,8 @@ Import.io delivers a SaaS product that enables users to convert the mass of data
 
 DataMiner is a Google Chrome and Microsoft Edge browser extension that helps you scrape data from web pages and into a CSV file or Excel spreadsheet.
 
-<h>
+
+
 
 ### Automation Tools:
 
