@@ -11,22 +11,21 @@
 
 Apify can automate anything you can do manually in a web browser, and run it at scale. Turn any website into an API and make the web work for you!
 
-2. Mozenda
+2. [Mozenda](https://www.mozenda.com/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
 
 Web scraping software - Billions Of Web Pages Scraped Since 2007. Compare Product & Service Options. 1/3 of fortune 500 companies trust Mozenda.
 
-3. FMiner
+3. [FMiner](http://www.fminer.com/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
 
 FMiner is a software for web scraping, web data extraction, screen scraping, web harvesting, web crawling and web macro support for Windows and Mac OS X.
 
-4. Import.io
+4. [Import.io](https://www.import.io/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
 
 Import.io delivers a SaaS product that enables users to convert the mass of data on websites into structured, machine readable data with no coding required. The point and click interface transforms websites into data with a few simple clicks, enabling anyone to get the data they need even behind a login.
 
-5. DataMiner
+5. [ParseHub](https://www.parsehub.com/?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Ftool-growth-hacking.zeef.com%2Ffr%2Ffranck-gautier)
 
-DataMiner is a Google Chrome and Microsoft Edge browser extension that helps you scrape data from web pages and into a CSV file or Excel spreadsheet.
-
+ParseHub is a free and powerful web scraping tool. With our advanced web scraper, extracting data is as easy as clicking on the data you need.
 
 
 
