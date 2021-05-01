@@ -76,9 +76,10 @@ Slack is a new way to communicate with your team. It's faster, better organized,
 
 Move from conversation to action. Plan, organize, collaborate and analyze your teamwork in one place.
 
+<p align="center">
+  <img width="460" height="300" src="https://camo.githubusercontent.com/32685a8b6004ff91d7b2e7e1a6dbdc1e90d0c649826e3ce3189eefaff65d3479/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f667849314735504e43356573794e6c4955732f67697068792e676966">
+</p>
 
-
-<img align="center" width="400" height="400" src="https://camo.githubusercontent.com/32685a8b6004ff91d7b2e7e1a6dbdc1e90d0c649826e3ce3189eefaff65d3479/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f667849314735504e43356573794e6c4955732f67697068792e676966">
 
 
 
