@@ -45,13 +45,15 @@ class Dog:
       print(f"{self.name} jumps {jump_height} cm high")
 
 davids_dog = Dog("Rex", 50)
-print(davids_dog)
+print(davids_dog.name)
+print(davids_dog.height)
 davids_dog.bark()
 davids_dog.jump()
 
 
 sarahs_dog = Dog("Teacup", 20)
-print(sarahs_dog)
+print(sarahs_dog.name)
+print(dsarahs_dog.height)
 sarahs_dog.bark()
 sarahs_dog.jump()
 
