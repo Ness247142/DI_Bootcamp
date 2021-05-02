@@ -31,28 +31,35 @@ print(f"The oldest cat is {oldest(cat1, cat2, cat3)} years old.")
 # Print the details of her dog by calling the methods.
 # Create an if statement outside of the class to check which dog is bigger. Print the name of the bigger dog.
 
-class Dog():
-	def __init__(self, name, height):
-		self.name = name
-		self.height = height
+class Dog:
 
-	def bark(self):
-		print(f"goes woof! ")
+    def __init__(self, name, height):
+        self.name = name
+        self.height = height
 
-	def jump(self, height):
-		height *= 2
-		print(f"{self.name} jumps {self.height} cm high!")
+    def bark(self):
+        print(f"{self.name} goes woof")
+
+    def jump(self):
+      jump_height = self.height *2        
+      print(f"{self.name} jumps {jump_height} cm high")
 
 davids_dog = Dog("Rex", 50)
-print(davids_dog.name, davids_dog.height)
+print(davids_dog)
+davids_dog.bark()
+davids_dog.jump()
+
 
 sarahs_dog = Dog("Teacup", 20)
-print(sarahs_dog.name, sarahs_dog.height)
+print(sarahs_dog)
+sarahs_dog.bark()
+sarahs_dog.jump()
+
 
 if davids_dog.height > sarahs_dog.height:
-	print(f"Rex is bigger than Teacup!")
-else: 
-	print(f"Teacup is bigger than Rex!")
+    print(f"{davids_dog.name} is bigger")
+else:
+    print(f"{sarahs_dog.name} is bigger")
 
 # Exercise 3 : Who’s The Song Producer ?
 # Define a class called Song, it will show the lyrics of a song.
