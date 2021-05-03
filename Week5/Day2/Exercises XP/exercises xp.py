@@ -62,12 +62,11 @@ class Dog:
         self.weight = weight
 
     def bark(self):
-        print("Woof! Woof!")
+        print(f"{self.name} is barking!")
 
     def run_speed(self):
         running_speed = self.weight/(self.age*10)
         return running_speed
-
 
     def fight(self, other_dog):
         running_speed = self.run_speed()
