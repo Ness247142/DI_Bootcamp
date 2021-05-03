@@ -62,11 +62,9 @@ class DNA:
 
 c = Chromosome()
 print(c) 
--> [1, 0, 1, 0, 0, 1, 1, 0, 0, 1]
 
 c.mutate()
 print(c)
-->[0, 0, 1, 1, 1, 0, 0, 0, 1, 0]
 
 d = DNA()
 print(d)
