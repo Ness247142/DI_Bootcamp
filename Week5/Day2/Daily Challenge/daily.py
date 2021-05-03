@@ -44,7 +44,7 @@ class Chromosome:
 
 	def mutate(self):
 		for gene in self.value:
-			if random() > 0,5:
+			if random() > 0.5:
 				gene.mutate()
 
 	def __repr__(self):
@@ -52,7 +52,7 @@ class Chromosome:
 
 class DNA:
 	def __init__(self):
-		self.value = [Chromosome()] for _ in range(10)
+		self.value = [Chromosome() for _ in range(10)]
 
 	def __repr__(self):
 		return f"{self.value}"
