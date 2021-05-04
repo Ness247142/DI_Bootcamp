@@ -205,7 +205,7 @@ def earth_age(seconds):
     print(f"On Uranus, you are {uranus_year} Earth years old") 
     print(f"on Neptune, you are {neptune_year} Earth years old")
 
-print(earth_age(1000000000))
+earth_age(1000000000)
 
 
 
