@@ -130,9 +130,9 @@ print("Today's Date : ", date.today())
 import datetime
 
 def january():
-    print(f"The January 1st is in {datetime.datetime(2022, 1, 1)-datetime.datetime.today().replace(microsecond=0)}")
+    print(f"The 1st of January is in {datetime.datetime(2022, 1, 1)-datetime.datetime.today().replace(microsecond=0)}")
 
-print(january())
+january()
 
 
 
