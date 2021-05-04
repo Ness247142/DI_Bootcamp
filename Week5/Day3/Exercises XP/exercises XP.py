@@ -167,7 +167,7 @@ def age_minutes(birthdate):
     minutes = today_date - birth
     print(f"You are {minutes} minutes old")
 
-print(age_minutes(birdthay_input))
+age_minutes(birdthay_input)
 
 
 
