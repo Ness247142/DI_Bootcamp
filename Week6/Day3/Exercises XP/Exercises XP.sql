@@ -129,17 +129,18 @@ WHERE film.length < 60
 AND film.rating = 'R'
 AND category.category_id = 6
 
-SELECT film.title 
-FROM film
-ON film.film_id = inventory.film_id
-JOIN rental
-ON rental.inventory_id = inventory.inventory_id
-JOIN customer
+SELECT film.title, customer.first_name, customer.last_name,
+payment.payment_id, payment.amount, return_date
+FROM rental JOIN customer
 ON rental.customer_id = customer.customer_id
-WHERE first_name = 'Matthew'
-AND last_name = 'Mahan'
-AND rental_rate > 4
-AND rental.return_date BETWEEN '28/07/2005' AND '01/08/2005'
+JOIN payment ON rental.rental_id = payment.rental_id
+JOIN inventory ON rental.inventory_id = inventory.inventory_id
+JOIN film ON inventory.film_id = film.film_id
+WHERE customer.first_name = 'Matthew'
+AND customer.last_name = 'Mahan'
+AND rental.return_date < '2005-08-01'
+AND rental.return_date > '2005-07-28'
+AND payment.amount > 4;
 
 SELECT film.title, film.description, film.replacement_cost
 FROM film
