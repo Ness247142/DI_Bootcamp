@@ -115,12 +115,12 @@ LIMIT 30
 -- The 4th film : His friend Matthew Mahan watched this film, too. It had the word ‘boat’ in the title or description, and it looked like it was a very expensive DVD to replace.
 
 
-SELECT film.title actor
-FROM (category JOIN film_category ON category.category_id = film_category.category_id)
-JOIN film ON film.film_id = film_actor.film_id
-WHERE film.description LIKE '%sumo%' 
-AND actor.first_name = 'Penelope' 
-AND actor.last_name = 'Monroe'
+select film.title
+from (actor join film_actor on actor.actor_id = film_actor.actor_id)
+join film on film.film_id = film_actor.film_id
+where film.description like '%Sumo%' 
+and actor.first_name = 'Penelope' 
+and actor.last_name = 'Monroe'
 
 SELECT film.title
 FROM (category JOIN film_category ON category.category_id = film_category.category_id)
