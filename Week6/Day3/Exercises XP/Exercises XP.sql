@@ -92,7 +92,7 @@ It does not need need an extra checking because the references are on a foreign 
 
 
 -- Find out how many rentals are still outstanding. (ie. have not been returned to the store yet)
-SELECT count(*) FROM rental WHERE rental_date is NULL
+SELECT count(*) FROM rental WHERE return_date is NULL
 
 
 -- Mark the 30 most expensive movies which are outstanding (ie. have not been returned to the store yet)
