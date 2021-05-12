@@ -56,7 +56,7 @@ SELECT first_name, last_name, salary FROM employees WHERE salary between 10000 a
 
 
 Write a query to display the name, including first_name and last_name and hire date for all employees who were hired in 1987.
-SELECT first_name, last_name, hire_date FROM employees WHERE hire_date LIKE '%1987%'
+SELECT first_name, last_name, hire_date FROM employees WHERE hire_date BETWEEN '1987-01-01' and '1987-12-31'
 
 
 Write a query to get the first name of the employees who holds the letter ‘c’ and ‘e’ in the first name.
