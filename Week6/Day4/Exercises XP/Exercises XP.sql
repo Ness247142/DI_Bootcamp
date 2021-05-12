@@ -60,23 +60,35 @@ SELECT first_name, last_name, hire_date FROM employees WHERE hire_date BETWEEN '
 
 
 Write a query to get the first name of the employees who holds the letter ‘c’ and ‘e’ in the first name.
-SELECT first_name FROM employees WHERE first_name LIKE '%c%' and first_name LIKE '%e%'
+SELECT first_name FROM employees WHERE first_name ILIKE '%c%e%'
 
 
 Write a query to display the last name, job, and salary for all the employees who don’t work as a Programmer or a Shipping Clerk, and not drawing the salary $4,500, $10,000, or $15,000.
-SELECT last_name, job_id, salary FROM employees WHERE job_id NOT IN(9, 17) AND salary NOT IN(4500, 10000, 15000) 
-
+SELECT CONCAT(first_name, ' ', last_name) "Full name", job_title, salary
+        FROM employees
+        INNER JOIN jobs
+        ON employees.job_id = jobs.job_id
+        WHERE job_title != 'Programmer' 
+            AND job_title != 'Shipping Clerk'
+            AND salary != 4500 
+            AND salary != 10000 
+            AND salary != 15000;
+            
 
 Write a query to display the last names of employees whose last name contain exactly six characters.
 SELECT last_name FROM employees WHERE last_name LIKE '______'
 
 
 Write a query to display the last name of employees having ‘e’ as the third character.
-SELECT last_name FROM employees WHERE last_name LIKE '__e'
+select last_name from employees where position('e' in last_name) = 3
 
 
 Write a query to display the jobs/designations available in the employees table.
-SELECT DISTINCT job_id FROM employees
+SELECT DISTINCT job_title
+    FROM employees
+    INNER JOIN jobs
+    ON employees.job_id = jobs.job_id;
+    
 
 Write a query to select all information of employees whose last name is either ‘JONES’ or ‘BLAKE’ or ‘SCOTT’ or ‘KING’ or ‘FORD’.
 SELECT * FROM employees WHERE last_name IN('Jones', 'Blake', 'Scott', 'King', 'Ford')
@@ -89,8 +101,10 @@ Update Statement:
 Write a SQL statement to change the email and commission_pct column of the employees table with ‘not available’ and 0.10 for all employees for those employees whose department_id is 110.
 UPDATE employees SET email= 'not available' WHERE department_id = 110
 
+
 Write a SQL statement to change the email column of the employees table with ‘available’ for those employees who belongs to the ‘Accounting’ department.
-UPDATE employees SET email='available' WHERE department_id=(SELECT department_id FROM departments WHERE department_name='Accounting')
+update employees set email = 'available' from departments where employees.department_id = departments.department_id and departments.department_name = 'Accounting'
+
 
 Write a SQL statement to change the salary of an employee to 8000 whose ID is 105, if the existing salary is less than 5000.
 UPDATE employees SET salary= 8000 WHERE employee_id=105 AND salary < 5000
