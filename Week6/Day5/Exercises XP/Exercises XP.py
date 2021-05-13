@@ -72,9 +72,9 @@ class MenuItem:
 		return "Item not in Database"
 
 
-item = MenuItem('Burger', 35)
-item.save()
-item.delete()
-item.update('Veggie Burger', 37)
-item2 = MenuItem.get_by_name('Beef Stew')
-items = MenuItem.all()
+name = MenuItem('Burger', 35)
+name.save()
+name.delete()
+name.update('Veggie Burger', 37)
+name = MenuItem.get_by_name('Beef Stew')
+name = MenuItem.all()
