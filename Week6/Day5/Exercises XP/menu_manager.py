@@ -27,7 +27,6 @@
 
 import json
 
-
 class MenuManager:
 	def __init__(self):
 		f = open('menu.txt')
