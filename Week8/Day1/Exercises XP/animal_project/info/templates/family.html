@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
 
-{% block title %}{% endblock %}
-
 {% block content %}
+<h1>Welcome to Family Home Page</h1>
 
-<h1>This is the family page</h1>
-    {% for animal in animals %}
-        <br>
-        <h3>Name: {{animal.name}}</h3>
-    {% endfor %}
+
+
+{{name}}
+{% for animal in animals %}
+<h2>{{animal.name}}</h2>
+{% endfor %}
+
+
+{% endblock %}
+
+{% block title %}
+Family Page
 {% endblock %}
