@@ -2,39 +2,42 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import json
 
-with open('animal.json') as f:
+with open("animal.json") as f:
     data = json.load(f)
 
-def family(request, families_id):
-    family_list = data['animals']
+
+def family(request, fam_id):
+    fam_list = data['families']
     context = {}
+    for fam in fam_list:
+        if fam_id == fam['id']:
+            context['name'] = fam['name']
 
     context['animals'] = []
-    for an_animal in family_list:
-        if an_animal['id'] == families_id:
-            context['animals'].append(an_animal)
+    for fam_animal in data['animals']:
+        if fam_animal['family'] == fam_id:
+            context['animals'].append(fam_animal)
 
-    html = render(request, 'family.html', context)
-    return html
+    html_page = render(request, 'family.html', context)
+    return html_page
 
-def animal(request, animals_id):
+
+def animal(request, anim_id):
+
     animal_list = data['animals']
     context = {}
 
-    for list_item in animal_list:
-        if animals_id == list_item['id']:
-            context['name'] = list_item['name']
-
     context['animals'] = []
-    for animals in data['animals']:
-        if animals['family'] == animals_id:
-            context['animals'].append(animals)
+    for my_animal in animal_list:
+        if my_animal['id'] == anim_id:
+            context['animals'].append(my_animal)
 
-    html = render(request, 'animal.html', context)
-    return html
+    html_page = render(request, 'animal.html', context)
+    return html_page
 
 
-Jonathan's solution
+
+#Jonathan's solution
 from django.shortcuts import render
 import json
 def all_animals(request):
