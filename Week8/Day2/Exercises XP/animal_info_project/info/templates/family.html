@@ -2,16 +2,20 @@
 
 {% load static %}
 
-{% block title %}{{animal.id}}{% endblock %}
+{% block title %}{{animal.name}}{% endblock %}
 
 {% block content %}
 
 <h1>Welcome to the animal page</h1>
 
-    {% for animal in family.animal_set.all %}
+<h3>Family: {{family.name}}</h3>
 
-        <h3>Name: {{animal.name}}</h3>
-        
-    {% endfor %}
+{% for animal in family.animal_set.all %}
+
+<h3><a href="{% url 'animal' animal.id %}">{{animal.name}}</a></h3>
+
+{% endfor %}
+
+<h3><a href="{% url 'animals'%}">Go back to animals</a></h3>
 
 {% endblock %}
