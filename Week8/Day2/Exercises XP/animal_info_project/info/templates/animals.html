@@ -2,16 +2,16 @@
 
 {% load static %}
 
-{% block title %}{{animal.id}}{% endblock %}
+{% block title %}{{animal.name}}{% endblock %}
 
 {% block content %}
 
 <h1>Welcome to the animals page</h1>
 
-    {% for animal in animals_all %}
+{% for animal in animals_all %}
 
-        <h3>Name: {{animal.name}}</h3>
+<h3><a href="{% url 'animal' animal.id %}">{{animal.name}}</a></h3>
 
-    {% endfor %}
+{% endfor %}
 
 {% endblock %}
