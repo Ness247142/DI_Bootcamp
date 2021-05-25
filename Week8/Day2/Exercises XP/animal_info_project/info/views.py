@@ -3,12 +3,8 @@ from .models import Family, Animal
 
 # Create your views here.
 def family(request, family_id):
-    family_info = Family.objects.get(id=family_id)
-    animals = Animal.objects.filter(family=family_info)
-    context = {
-        'family': family_info,
-        'animals': animals
-        }
+    fam = Family.objects.get(id=family_id)
+    context = {'family': fam}
     return render(request, 'family.html', context)
 
 
