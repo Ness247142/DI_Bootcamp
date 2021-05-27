@@ -1,0 +1,12 @@
+.div_img {
+    display: flex;
+    height: 100%;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+li {
+    font-size: 15px;
+
+}

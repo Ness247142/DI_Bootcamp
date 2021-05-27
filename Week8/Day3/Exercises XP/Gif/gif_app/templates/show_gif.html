@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+GIF - {{ gif.title }}
+{% endblock %}
+{% block content %}
+<div class="card" style="width: 18rem;">
+    <img src="{{gif.url}}" class="card-img-top" alt="{{gif.title}}">
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{gif.title}}</li>
+        <li class="list-group-item">User: {{gif.uploader_name}}</li>
+        <li class="list-group-item">created {{ gif.created_at | timesince }} ago</li>
+    </ul>
+</div>
+{% endblock %}

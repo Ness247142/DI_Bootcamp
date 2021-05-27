@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ page_title }}
+{% endblock %}
+{% block content %}
+<h3>{{ page_heading }}</h3>
+<div class="row">
+    {% for gif in gif_list %}
+    <div class="col-3">
+        <div class="card">
+            <img src="{{gif.url}}" class="card-img-top" alt="{{gif.title}}">
+
+            <div class="card-body">
+                <a href="{% url 'view_gif' gif.id %}" class="card-link">See GIF details</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

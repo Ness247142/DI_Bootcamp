@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Add a gif
+{% endblock %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <input type="submit" value="Submit form">
+
+</form>
+{% endblock %}
