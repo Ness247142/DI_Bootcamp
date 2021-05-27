@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ type }}</title>
+</head>
+
+<body>
+    <h1>{{ type }}</h1>
+    <form method='POST'>
+        {% csrf_token %}
+        <table>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                    {% endfor %}
+            </ul>
+            {% endif %}
+            {{ form }}
+        </table>
+        <input type='submit' value='submit'>
+    </form>
+</body>
+
+</html>
