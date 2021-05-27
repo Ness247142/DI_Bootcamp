@@ -1,0 +1,30 @@
+{% extends 'base.html' %}}
+{% block title %}{{title}}{% endblock %}
+{% block heading %}{{heading}}{% endblock %}
+{% block summary %}{{summary}}{% endblock %}
+{% block content %}
+
+<a href="/rentals/add"><button type="button" class="btn btn-success">Add Rental</button></a>
+<br><br>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Full Details</th>
+            <th scope="col">Rental Date</th>
+            <th scope="col">Return Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for rental in rentals %}
+        <tr>
+            <th scope="row"><a href="/rentals/details/{{rental.id}}"><button type="button" class="btn btn-info">Rental
+                        Ref #{{rental.id}}</button></a></th>
+            <td>{{rental.rental_date}}</td>
+            <td>{{rental.return_date}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

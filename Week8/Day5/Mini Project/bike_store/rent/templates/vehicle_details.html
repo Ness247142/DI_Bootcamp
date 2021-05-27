@@ -1,0 +1,38 @@
+{% extends 'base.html' %}}
+{% block title %}{{title}}{% endblock %}
+{% block heading %}{{heading}}{% endblock %}
+{% block summary %}{{summary}}{% endblock %}
+{% block content %}
+
+<div class="card">
+    <h5 class="card-header">Rental ID: #{{vehicle.id}}</h5>
+    <div class="card-body">
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th scope="row">Vehicle Size:</th>
+                    <td>{{vehicle.size.name}}</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Vehicle Type:</th>
+                    <td>{{vehicle.vehicle_type.name}}</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Date Created:</th>
+                    <td>{{vehicle.date_created}}</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Real Cost:</th>
+                    <td>{{vehicle.real_cost}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}TITLE{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/rentals">Rentals</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/customers">Customers</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/vehicles">Vehicles</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>{% block heading %}PAGE HEADING{% endblock %}</h1>
+        <p>{% block summary %}PAGE SUMMARY{% endblock %}</p>
+        {% block content %}
+        THIS IS WHERE ALL THE OTHER STUFF WILL GO
+        {% endblock %}
+    </div>
+</body>
+
+</html>

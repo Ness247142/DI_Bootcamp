@@ -1,0 +1,31 @@
+{% extends 'base.html' %}}
+{% block title %}{{title}}{% endblock %}
+{% block heading %}{{heading}}{% endblock %}
+{% block summary %}{{summary}}{% endblock %}
+{% block content %}
+
+<div class="card">
+    <h5 class="card-header">Rental ID: #{{rental.id}}</h5>
+    <div class="card-body">
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th scope="row">Customer Name and ID:</th>
+                    <td>{{rental.customer.first_name}} {{rental.customer.last_name}} #{{rental.customer.id}}</td>
+                    <td><a href="/customers/details/{{rental.customer.id}}" class="btn btn-primary">Customer Details</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Vehicle Size, Type and ID:</th>
+                    <td>{{rental.vehicle.size}} {{rental.vehicle.vehicle_type}} #{{rental.vehicle.id}}</td>
+                    <td><a href="/vehicles/details/{{rental.vehicle.id}}" class="btn btn-primary">Vehicle Details</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}

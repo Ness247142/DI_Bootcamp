@@ -1,0 +1,44 @@
+{% extends 'base.html' %}}
+{% block title %}{{title}}{% endblock %}
+{% block heading %}{{heading}}{% endblock %}
+{% block summary %}{{summary}}{% endblock %}
+{% block content %}
+
+<div class="card">
+    <h5 class="card-header">Customer ID #{{customer.id}}</h5>
+    <div class="card-body">
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th scope="row">First Name:</th>
+                    <td>{{customer.first_name}}</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Last Name:</th>
+                    <td>{{customer.last_name}}</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Phone:</th>
+                    <td>{{customer.phone_number}}</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Email:</th>
+                    <td>{{customer.email}}</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Address:</th>
+                    <td>{{customer.address}}, {{customer.city}}, {{customer.country}}.</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}
