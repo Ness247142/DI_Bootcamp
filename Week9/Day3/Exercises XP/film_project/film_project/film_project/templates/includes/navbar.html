@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">IMDI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'film:home' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            {% if user.is_superuser %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'film:add-film' %}">Add film</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'film:add-director' %}">Add director</a>
+            </li>
+            {% endif %}
+            {% if user.is_authenticated %}
+            <li>
+                <a class="nav-link" href="{% url 'account:profile' pk=request.user.id %}">Profile</a>
+            </li>
+            <li>
+                <span style="margin-left:300px;">Login as {{ request.user.username }}<a class="nav-link" href="{% url 'account:logout' %}" style="display:inline-block;">Logout</a></span>
+            </li>
+            {% else %}
+            <li>
+                <a class="nav-link" href="{% url 'account:login' %}">Login</a>
+            </li>
+            <li>
+                <a class="nav-link" href="{% url 'account:signup' %}">Signup</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>

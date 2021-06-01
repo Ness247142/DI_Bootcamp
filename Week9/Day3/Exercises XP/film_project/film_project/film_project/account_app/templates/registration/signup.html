@@ -1,0 +1,17 @@
+{% extends 'partials/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h3 class="text-center">SignUp Page !</h3>
+<div style="margin: 10px 50px 50px">
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+</div>
+{% if failed_message %}
+<div class="mt-2">
+    <p class="alert alert-danger">{{failed_message}}</p>
+</div>
+{% endif %}
+{% endblock content %}

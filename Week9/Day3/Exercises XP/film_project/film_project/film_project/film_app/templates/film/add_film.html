@@ -1,0 +1,14 @@
+{% extends 'partials/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+{# <div style="margin: 10px 50px 50px">#}
+    {# <form method="post">#}
+        {# {% csrf_token %}#}
+        {# {{ form|crispy}}#}
+        {# <button type="submit" class="btn btn-success">Add</button>#}
+        {# </form>#}
+    {# </div>#}
+<div style="margin: 10px 50px 50px">
+    {% crispy form %}
+</div>
+{% endblock %}

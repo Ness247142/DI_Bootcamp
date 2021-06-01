@@ -1,0 +1,38 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block content %}
+<div style="margin: 10px 26px">
+    <h1 class="text-center">Welcome {{ user.first_name }} !</h1>
+    <h2 class="text-center">Here are some of the Movies :</h2>
+    <main>
+        <div class="grid">
+            {% if user.username %}
+            {% for f in films %}
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">{{ f.title }} <br> by: <br>
+                        {{f.director.all|join:" & "}}
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Date: {{ f.release_date }}</h6>
+                    <p class="card-text">Category: {{ f.category.all|join:", " }}</p>
+                    <p class="card-text">Created in: {{ f.created_in_country }}</p>
+                    <a href="{% url 'update_director' f.director.all.0.id %}" class="card-link">Modify Director</a>
+                    <a href="{% url 'update_film' f.id %}" class="card-link">Modify Film</a>
+                    <div class="dropdown-divider"></div>
+                    <p>The movie is available in: {{ f.available_in_countries.all|join:", "}}</p>
+                </div>
+            </div>
+
+
+            {% endfor %}
+            {% else %}
+            <h3>You have to <a href="{% url 'login' %}">Login</a> first ;)</h3>
+            {% endif %}
+        </div>
+        <br>
+        <small id="click"><button class="btn btn-sm btn-danger">Click here for a little Joke :)</button> <br> <span
+                id="joke" style="visibility: hidden">{{ chuck }}</span></small>
+    </main>
+
+</div>
+{% endblock %}

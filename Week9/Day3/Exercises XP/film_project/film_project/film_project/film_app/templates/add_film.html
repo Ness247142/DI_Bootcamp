@@ -1,0 +1,28 @@
+{% extends 'partials/base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}AddFilm{% endblock %}
+
+{% block content %}
+
+{% include 'partials/navbar.html' %}
+
+<div class="container-fluid">
+
+    <h1>Add Film</h1>
+    {% include 'partials/message.html' %}
+    <form method="POST">
+        {% csrf_token %}
+        <table class="table table-hover">
+            {{myform | crispy}}
+        </table><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div><br>
+
+
+<a class="btn btn-primary" href="{% url 'home' %}">Home</a>
+{% endblock %}

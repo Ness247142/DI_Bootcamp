@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>All films</h1>
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        {% if messages %}
+        {% for message in messages %}
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+        <div class="alert alert-danger messages">
+            <span {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+                {{ message }}<br>
+            </span>
+        </div>
+        {% else %}
+        <div class="alert alert-success messages">
+            <span {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+                {{ message }}<br>
+            </span>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>
+<div class="row">
+    {% for film in films %}
+    <div class="card" style="width: 18rem;">
+        <img src="{{ film.get_poster.image.url }}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{ film.title }} by {{ film.director }}</h5>
+            <p class="card-text"><b>Category: </b>{% for category in film.category.all %}
+                {{category}}
+                {% endfor %}</p>
+            <p class="card-text"><b>Release: </b>{{ film.release_date }}</p>
+            {% if user.is_superuser %}
+
+            <a href="{% url 'film:edit-director' pk=film.director.pk %}" class="btn btn-primary">Edit director</a>
+            <a href="{% url 'film:delete-director' pk=film.director.pk %}" class="btn btn-danger">Delete director</a>
+            <a href="{% url 'film:edit-film' pk=film.id %}" class="btn btn-primary">Edit film</a>
+            <a href="{% url 'film:delete-film' pk=film.id %}" class="btn btn-danger">Delete film</a>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
