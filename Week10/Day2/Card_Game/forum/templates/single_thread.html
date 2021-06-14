@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Thread{% endblock %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+<br><br><br><br>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{thread.headline}}</h5>
+            <p>{{thread.subject}}</p>
+            <p><small class="text-muted">Created: {{thread.date | timesince}} ago by {{thread.creator}}</small></p>
+            <h6 style="text-decoration: underline;">Comments</h6>
+            {%for comment in thread.comment.all%}
+              <p>{{thread.creator}}: {{comment.text}}</p>
+            {%endfor%}
+            <form action="" method="POST">
+              {% csrf_token %}
+              {{comment_form|crispy}}
+              <button type="submit" class="btn btn-secondary">Comment</button>
+            </form> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

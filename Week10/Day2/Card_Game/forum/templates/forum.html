@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Forum{% endblock %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+<br><br><br>
+<div class="container-fluid">
+    <br>
+    <div class="row">
+      <div class="col-md-3">
+          <a href="{% url 'thread' %}"><button class="btn btn-outline-secondary">Create a thread</button></a>
+        {% for thread in threads %}
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Context: {{thread.headline}}</h5>
+            <p class="card-text">Subject: {{thread.subject}}</p>
+            <small class="text-muted">Created: {{thread.date | timesince}} ago by {{thread.creator}}</small>
+            <p><a href="{% url 'singlethread' thread.id %}"><button class="btn btn-outline-secondary">Comment</button></a></p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+<br><br><br>
+<div class="container-fluid">
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">User profile of {{user.get_full_name}}</h5>
+            <img src="{{user.profile.image}}" alt="" style="width: 150px; height: 150px; border-radius: 50%; margin: 10px 0;">
+            <p class="card-text">Username: {{user.username}}</p>
+            <p class="card-text">First name: {{user.first_name}}</p>
+            <p class="card-text">Last name: {{user.last_name}}</p>
+            <p class="card-text">Email: {{user.email}}</p>
+            <a href="{% url 'profile_edit' %}">
+              <button class="btn btn-primary">Edit profile</button>
+           </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Edit User{% endblock %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+<br><br><br>
+
+<div class="container-fluid">
+    <br>
+    <h5>Change your profile</h5>
+    <br>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form1 | crispy }}
+        {{ form2 | crispy }}
+        <br>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+    </form>
+</div>
+
+{% endblock %}
