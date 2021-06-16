@@ -77,7 +77,7 @@ Slack is a new way to communicate with your team. It's faster, better organized,
 Move from conversation to action. Plan, organize, collaborate and analyze your teamwork in one place.
 
 <p align="center">
-  <img width="700" height="350" src="https://secureservercdn.net/198.71.233.67/g6e.239.myftpupload.com/wp-content/uploads/2020/04/company-in-udaipur.gif">
+  <img width="700" height="400" src="https://secureservercdn.net/198.71.233.67/g6e.239.myftpupload.com/wp-content/uploads/2020/04/company-in-udaipur.gif">
 </p>
 
 
