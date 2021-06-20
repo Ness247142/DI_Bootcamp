@@ -1,0 +1,18 @@
+a {
+  background-color: #139CFF;
+  text-decoration: none;
+  color:white;
+  padding: 10px;
+  border-radius: 7px;
+  display: inline-block;
+  font-family: helvetica;
+  /* transition: <property> (default all) <duration> <timing-function> (default ease) <delay> (default 0); */
+  transition: background-color .5s, color .5s linear, border-radius 2s ease-out;
+  /* try playing around with the parameters in the value and see how the transition changes! */
+}
+
+a:hover {
+  background-color: #35EC5C;
+  color: black;
+  border-radius: 30px;
+}

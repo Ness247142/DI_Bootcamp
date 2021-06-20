@@ -1,0 +1,16 @@
+#container {
+    font-size: 16px;
+}
+.main_heading {
+    background-color: grey;    
+}
+.main {
+    background-color: blue;
+}
+.main_footer {
+    background-color: green;
+}
+.main_header, 
+.main_footer {
+  color: red;
+}

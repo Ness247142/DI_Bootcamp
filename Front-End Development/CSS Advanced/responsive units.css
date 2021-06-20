@@ -1,0 +1,31 @@
+/* BAD */
+
+.heading_content {
+    color: #0000F9;
+    font-size: 2em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.footer_content {
+    color: #E046CF;
+    font-size: 2em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/* BETTER */
+
+.heading_content, .footer_content {
+    font-size: 2em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.heading_content {
+    color: #0000F9;
+}
+
+.footer_content {
+    color: #E046CF;
+}

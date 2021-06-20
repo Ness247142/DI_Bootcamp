@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #ball {
+      width: 100px;
+      height: 100px;
+      margin-top: 400px;
+      animation: shapeshift 6s infinite;
+    }
+    @keyframes shapeshift {
+    0%, 100% {
+        transform: translate(0,0);  
+        border-radius: 100px;
+        background-color: red;
+    }
+    33% {
+        transform: translate(200px, -400px) scale(0.5, 0.5);
+        border-radius: 0px;
+        background-color: blue;
+    }
+    66% {
+        transform: translate(400px, 0) rotate(4545deg) scale(2,2);
+        border-radius: 0px;
+        background-color: green;
+    }
+}
+  </style>
+</head>
+<body>
+  <div id="ball"></div>
+</body>
+</html>
