@@ -50,7 +50,6 @@ print(davids_dog.height)
 davids_dog.bark()
 davids_dog.jump()
 
-
 sarahs_dog = Dog("Teacup", 20)
 print(sarahs_dog.name)
 print(dsarahs_dog.height)
@@ -62,6 +61,7 @@ if davids_dog.height > sarahs_dog.height:
     print(f"{davids_dog.name} is bigger")
 else:
     print(f"{sarahs_dog.name} is bigger")
+
 
 # Exercise 3 : Who’s The Song Producer ?
 # Define a class called Song, it will show the lyrics of a song.
