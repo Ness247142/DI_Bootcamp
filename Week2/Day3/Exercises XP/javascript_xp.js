@@ -115,7 +115,6 @@ for (let x in family) {
     console.log(x + ": " + family[x])
 }
 
-
 //Exercise 6
 
 let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
@@ -128,4 +127,3 @@ for (let i in sortedNames) {
 }
 
 console.log(secondList);
-
