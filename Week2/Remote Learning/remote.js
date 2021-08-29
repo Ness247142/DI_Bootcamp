@@ -1,4 +1,3 @@
-
 // Exercise_1
 // Analyse the code below without running it, what will be the output ?
 
@@ -8,7 +7,6 @@ console.log(num);
 
 // The expected output will be num == 10;
 // The second variable (var num = 10) will override the first variable (var num = 8) in a hierarchical way. It's the "Cascading order".
-
 
 
 // Exercise_2
