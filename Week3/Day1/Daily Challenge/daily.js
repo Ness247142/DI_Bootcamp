@@ -1,5 +1,3 @@
-
-
 // Create an array of planets of the solar system
 // For each planet, in the array, create a div using createElement. This div should have a class named ‘planet’.
 // Each planet should have a different background color. (Hint: add a new class to each planet)
@@ -21,5 +19,3 @@ for (let i = 0; i <= 7; i++) {
     console.log(planetBackgroundColor);
 }
 }
-
-
