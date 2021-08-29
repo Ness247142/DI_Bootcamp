@@ -1,5 +1,3 @@
-
-
 function pyramid() {
     let n = 4;
     let output = " ";
