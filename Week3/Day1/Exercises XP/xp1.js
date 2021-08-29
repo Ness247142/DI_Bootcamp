@@ -83,7 +83,6 @@ console.log(liFive);
 // Change your name by “The Boss”
 
 
-
 // Exercise 4
 // 1. Add a “light blue” background color and some padding to the div above.
 // 2. Do not display the first name (John) in the list and add a border to the second name (Pete).
