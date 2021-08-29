@@ -24,5 +24,5 @@ def run():
     draw_wordlines(text_list, longest)
     draw_starline(longest)
 
-
 run()
+
