@@ -13,3 +13,4 @@ while (i <= x//2 ):
     else:
         print(x, "is not a perfect number") 
         break
+
