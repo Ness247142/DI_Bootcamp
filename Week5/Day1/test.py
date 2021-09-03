@@ -1,3 +1,4 @@
+
 OOP = Object-Oriented Programming
 
 Abstraction
@@ -94,10 +95,5 @@ result = u1.login("jon@di.com", "abc")
 
 u1.change_password() -> change the old password with a new one
 u1.login() -> login with a new password
-
-
-
-
-
 
 
