@@ -13,7 +13,6 @@
 # Now, use the provided txt file and try using the class you created above.
 
 
-
 from collections import Counter 
 
 import nltk
