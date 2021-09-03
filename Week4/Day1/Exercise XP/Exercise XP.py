@@ -103,4 +103,3 @@ if height > int(145):
 	print("You can ride a roller coaster")
 else:
 	print("You are not tall enough to ride a roller coaster")
-
