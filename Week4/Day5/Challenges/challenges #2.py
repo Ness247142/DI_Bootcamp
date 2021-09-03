@@ -96,3 +96,4 @@ print(my_list)  # Call the function
 The final output is : [2, 12, 24, 233, 354]
 
 # The purpose of this code was to sort the numbers from the lowest to the highest
+
