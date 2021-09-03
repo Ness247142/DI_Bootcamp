@@ -1,4 +1,3 @@
-
 # Exercise
 # Using the input function, ask the user for a string. The string must be 10 characters long.
 # If it’s less than 10 characters, print a message which states “string not long enough”
@@ -38,7 +37,6 @@ def text_first_last_ch():
 
 for i in range(0,len(string)):
    print(string[i])
-
 
 import random
 
