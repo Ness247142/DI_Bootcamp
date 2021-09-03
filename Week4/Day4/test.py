@@ -1,4 +1,3 @@
-
 # FUNCTIONS
 # Longer version
 def letter(thing):
@@ -104,5 +103,4 @@ def max(numbers=[]):
 	return largest_number
 
 print(numbers)
-
 
