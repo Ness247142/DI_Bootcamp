@@ -1,5 +1,5 @@
-
 # FUNCTION for the Tic Tac Toe board
+
 def display_board(values):
     print(" ")
     print("\t     |     |")
@@ -155,3 +155,5 @@ if __name__ == "__main__":
             current_player = player2
         else:
             current_player = player1
+
+            
