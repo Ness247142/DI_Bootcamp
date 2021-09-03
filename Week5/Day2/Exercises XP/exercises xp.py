@@ -99,6 +99,7 @@ print(dog2.fight(dog1))
 # “dog_name shakes your hand”
 # “dog_name plays dead”
 
+
 import random
 
 class PetDog(Dog):
