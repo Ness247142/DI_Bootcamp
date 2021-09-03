@@ -22,7 +22,6 @@ for i in list:
 # Autumn runs from September (9) to November (11)
 # Winter runs from December (12) to February (2)
 
-
 month = input("Give me a month" )
 day = int(input("Give me a day in this month" ))
 
