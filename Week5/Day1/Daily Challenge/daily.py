@@ -46,7 +46,6 @@ class Farm:
         print(f"McDonald’s farm has {total_animal_farm}")
 
 
-
 macdonald = Farm("McDonald")
 macdonald.add_animal('cows',5)
 macdonald.add_animal('sheep')
@@ -58,3 +57,4 @@ print(macdonald.get_info())
 macdonald.get_animal_types()
 
 macdonald.get_short_info()
+
