@@ -1,3 +1,4 @@
+
 # import random
 
 # class DNA:
@@ -22,7 +23,6 @@
 # 		for x in range(0, 10):
 # 			self.dna_list.append(self.chromosome_list)
 # 			return self.dna_list
-
 
 
 from random import randint, random
@@ -56,7 +56,6 @@ class DNA:
 
 	def __repr__(self):
 		return f"{self.value}"
-
 
 
 
