@@ -48,7 +48,3 @@ def myMax(list1):
 list1 = [50, 20, 1, 40, 100] 
 print(max(list1)) 
 
-
-
-
-
