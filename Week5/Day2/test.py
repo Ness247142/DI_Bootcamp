@@ -154,6 +154,7 @@ finally # always run this next
 # Using exception  handling to add numbers in a list, even when the list contains garbage information
 my_list = [2,3,1,2,"four",42,1,5,3,"imanumber", None]
 
+
 def make_sum(mylist):
 	total = 0
 	for num in mylist:
