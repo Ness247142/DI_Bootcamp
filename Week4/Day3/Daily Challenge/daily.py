@@ -43,3 +43,4 @@ for letter in text_input:
 print("Decrypted text:",text_input)
 
 print("Encrypted text:",encrypted_word)
+
