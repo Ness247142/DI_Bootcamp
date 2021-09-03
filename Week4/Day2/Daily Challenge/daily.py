@@ -6,6 +6,7 @@ month = int(month)
 year = int(year)
 top_cake = int((11-candle_number)/2)  
 
+
 space = " "
 roof = "^"
 line = "_"
