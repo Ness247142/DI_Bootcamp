@@ -75,5 +75,3 @@ SELECT sum(math_grade) FROM students
 
 
 
-
-
