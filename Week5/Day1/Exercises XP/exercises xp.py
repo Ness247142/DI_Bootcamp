@@ -3,7 +3,6 @@
 # Create a function that finds the oldest cat and returns the cat
 # Print out: “The oldest cat is , and is years old.” using the method previously created
 
-
 class Cat:
     def __init__(self, name, age):
         self.name = name
