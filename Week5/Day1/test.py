@@ -46,7 +46,6 @@ We can add attributes to objects -> p1.pets = ["Fluffy", "Rex"]
 
 
 
-
 class User:
 
 	def __init__(self, username, password):
