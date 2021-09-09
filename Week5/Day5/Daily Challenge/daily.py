@@ -29,4 +29,3 @@ url3_stop = time.process_time()
 url3_final = url3_stop - url3_start
 print("Passed time - url1: ",url3_final)
 
-
