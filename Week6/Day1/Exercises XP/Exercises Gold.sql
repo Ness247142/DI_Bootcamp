@@ -23,7 +23,7 @@
 4	"Amelia" "Dux"		"1996-04-07"
 5	"David"	"Grez"		"2003-06-14"
 6	"Omer"	"Simpson"	"1980-10-03"
-7      "Nessim" "Azoulay"       "1996-07-24"
+7 "Nessim" "Azoulay" "1996-07-24"
 
 
 2. SELECT first_name, last_name FROM students
