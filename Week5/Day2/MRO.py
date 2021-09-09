@@ -16,6 +16,7 @@ class D(B,C):
 print(D.mro())
 D.num
 
+
 # Output
 # [<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>]
 
