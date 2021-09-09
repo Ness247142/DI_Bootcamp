@@ -25,4 +25,3 @@ with open("myfile.json", "w") as f: # Convert obj into a json file
 
 with open("myfile.json", "w") as f:
 	f.write(json.dump(obj))
-
