@@ -44,3 +44,4 @@ DELETE FROM people; -> delete everything in the tbale
 
 
 Instead of = you can use LIKE with a wilcard "%something%"
+
