@@ -1,5 +1,4 @@
 
-
 In this puzzle you have to go through all the SQL queries and provide us the output of the requests before executing them.
 Then, execute them to make sure you were right
 
