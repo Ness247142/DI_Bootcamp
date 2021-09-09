@@ -41,3 +41,4 @@ SELECT * FROM customers WHERE first_name NOT LIKE 'Scott'
 2	"Sandra"	"Jones"
 4	"Trevor"	"Green"
 5	"Melanie"	"Johnson"
+
