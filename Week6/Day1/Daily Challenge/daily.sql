@@ -1,4 +1,3 @@
-
 -- Using the table actors from the lesson, 
 -- 1. Count how many actors are in the table
 -- 2. Try to add a new actor, with some blank fields. What happens ?
