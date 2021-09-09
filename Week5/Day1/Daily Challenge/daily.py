@@ -1,4 +1,3 @@
-
 # 1. Create a Farm class. How do we implement that?
 # 2. Does the Farm class need an __init__ method? If so, what parameters should it take?
 # 3. How many method does the Farm class need ?
