@@ -32,3 +32,4 @@ print(M.__mro__)
 
 # Output
 # (<class '__main__.M'>, <class '__main__.B'>, <class '__main__.A'>, <class '__main__.X'>, <class '__main__.Y'>, <class '__main__.Z'>, <class 'object'>)
+
