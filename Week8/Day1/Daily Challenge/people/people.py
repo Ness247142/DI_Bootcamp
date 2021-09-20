@@ -1,6 +1,5 @@
 import json
 
-
 people = [
   {
     'id': 1,
