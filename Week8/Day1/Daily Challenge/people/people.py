@@ -27,6 +27,5 @@ people = [
   }
 ]
 
-
 with open('people.json', 'w') as f:
     json.dump(people, f)
