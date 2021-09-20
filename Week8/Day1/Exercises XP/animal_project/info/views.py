@@ -51,3 +51,4 @@ def get_animals_data():
     with open('animals.json', 'r') as f:
         data = json.load(f)
     return data
+
