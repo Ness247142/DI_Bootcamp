@@ -1,6 +1,5 @@
 import json
 
-
 info_dict = {
     "animals": [
         {
