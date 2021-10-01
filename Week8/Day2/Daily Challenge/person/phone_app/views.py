@@ -3,7 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-
 def phonenumber(request):
     return HttpResponse('<h1>PhoneNumber page<h1>')
 
