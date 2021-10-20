@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
+
 {% block title %}
 Our Categories
 {% endblock %}
+
 {% block content %}
 <div class="row">
     {% for category in categories %}
@@ -15,4 +17,5 @@ Our Categories
     </div>
     {% endfor %}
 </div>
+
 {% endblock %}
