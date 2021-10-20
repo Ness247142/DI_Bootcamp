@@ -9,6 +9,8 @@ class GifForm(forms.Form):
     categories = forms.ModelMultipleChoiceField(
         queryset=Category.objects.all())
 
-
+    
 class CategoryForm(forms.Form):
     name = forms.CharField(max_length=100)
+
+    
