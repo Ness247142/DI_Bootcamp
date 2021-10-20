@@ -8,5 +8,4 @@ urlpatterns = [
     path('view_categories/', views.view_categories, name='view_categories'),
     path('view_category/<int:id>', views.view_category, name='view_category'),
     path('', views.homepage, name='homepage'),
-
 ]
