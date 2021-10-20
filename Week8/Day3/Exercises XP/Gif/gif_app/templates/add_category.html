@@ -4,6 +4,7 @@
 {% block title %}
 Add a category
 {% endblock %}
+
 {% block content %}
 <form method="post">
     {% csrf_token %}
@@ -11,6 +12,5 @@ Add a category
         {{form.as_table}}
     </table>
     <input type="submit" value="Submit form">
-
 </form>
 {% endblock %}
