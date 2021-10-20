@@ -56,3 +56,4 @@ def homepage(request):
         'page_heading': 'Our GIFs'
     }
     return render(request, 'show_gifs.html', context)
+
