@@ -2,6 +2,7 @@
 {% block title %}
 GIF - {{ gif.title }}
 {% endblock %}
+
 {% block content %}
 <div class="card" style="width: 18rem;">
     <img src="{{gif.url}}" class="card-img-top" alt="{{gif.title}}">
@@ -12,4 +13,5 @@ GIF - {{ gif.title }}
         <li class="list-group-item">created {{ gif.created_at | timesince }} ago</li>
     </ul>
 </div>
+
 {% endblock %}
