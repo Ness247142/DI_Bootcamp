@@ -4,7 +4,6 @@ from .forms import AddCustomerForm, AddRentalForm, AddVehicleForm
 
 # Create your views here.
 
-
 def index(request):
     context = {
         'title': "Home Page",
