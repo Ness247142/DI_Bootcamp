@@ -12,6 +12,7 @@ def populate_rental_rates():
             for size in sizes:
                 rental, created = RentalRate.objects.get_or_create(vehicle_type=type, vehicle_size=size, daily_rate=random.randint(15, 100))
 
+                
 def populate_vehicles(number):
     sizes = VehicleSize.objects.all()
     types = VehicleType.objects.all()
