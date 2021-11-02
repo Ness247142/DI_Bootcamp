@@ -17,3 +17,4 @@ urlpatterns = [
          views.vehicle_details, name="vehicle_details"),
     path("vehicles/add", views.add_vehicle, name="add_vehicle"),
 ]
+
