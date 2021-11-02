@@ -9,3 +9,4 @@ admin.site.register(VehicleSize)
 admin.site.register(Vehicle)
 admin.site.register(Rental)
 admin.site.register(RentalRate)
+
