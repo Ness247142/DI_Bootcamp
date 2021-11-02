@@ -2,6 +2,7 @@ from faker import Faker
 from rent.models import Customer, Rental, Vehicle
 import random
 
+
 fake = Faker()
 
 for i in range (15):
