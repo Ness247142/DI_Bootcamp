@@ -2,7 +2,6 @@ from django import forms
 from django.forms import Form, ModelForm
 from .models import Customer, VehicleType, VehicleSize, Vehicle, Rental, RentalRate
 
-
 class AddRentalForm(ModelForm):
     class Meta:
         model = Rental
