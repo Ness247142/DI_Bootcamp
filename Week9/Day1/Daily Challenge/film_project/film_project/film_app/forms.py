@@ -1,7 +1,6 @@
 from django import forms
 from .models import Director, Film
 
-
 class AddFilmForm(forms.ModelForm):
     class Meta:
         model = Film
