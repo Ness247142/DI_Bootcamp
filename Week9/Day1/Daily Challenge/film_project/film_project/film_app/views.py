@@ -37,3 +37,5 @@ def AddDirector(CreateView):
     form_class = AddDirectorForm
     template_name = 'add_director.html'
     success_url = reverse_lazy('homepage.html')
+
+    
