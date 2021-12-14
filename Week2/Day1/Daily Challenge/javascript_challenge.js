@@ -11,4 +11,5 @@ fruits.splice(0, 1); // Remove “Apples” from the array.
 fruits.reverse(); // Reverse the order of the elements in an array.
 
 let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+
 console.log(moreFruits[1][1][0]) // Get fruit "Oranges"
