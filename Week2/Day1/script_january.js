@@ -36,4 +36,3 @@ let color;
 // 3) DEFINING
 color = "red"
 
-
