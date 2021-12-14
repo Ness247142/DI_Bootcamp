@@ -1,5 +1,4 @@
 
-
 let string1 = "not";
 let string2 = "bad";
 let testA = "This movie is not so bad";
