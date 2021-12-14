@@ -1,4 +1,3 @@
-
 //Exercise 1
 let language = prompt("Which language do you speak?");
 
