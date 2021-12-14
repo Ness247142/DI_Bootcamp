@@ -9,7 +9,6 @@ console.log(string4)
 let string5 = string2.substring(0,string2.length-1) + string1.substring(string1.length-1);
 console.log(string5)
 
-
 function mixUp(mix, pod) {
     return pod.slice(0, 2) + mix.slice(2) + " " + mix.slice(0, 2) + pod.slice(2);
   }
