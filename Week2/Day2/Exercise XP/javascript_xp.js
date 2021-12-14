@@ -1,4 +1,3 @@
-
 // Exercise 1
 let x = 5;
 let y = 2;
@@ -53,12 +52,6 @@ if (users.length == 0) {
 } else {
     console.log("HAPPY");
 };
-
-
-
-
-
-
 
 
 
