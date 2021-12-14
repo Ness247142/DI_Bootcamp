@@ -1,3 +1,4 @@
+
 function myFunction() {
     var x,y,z,oper;
     x=prompt("Type first number");
@@ -28,4 +29,4 @@ function myFunction() {
     
     return z;
       }
-  document.getElementById("demo").innerHTML =myFunction();  
+  document.getElementById("demo").innerHTML =myFunction();
