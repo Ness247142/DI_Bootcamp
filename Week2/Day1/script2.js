@@ -1,7 +1,6 @@
 // Data Types
 // Primitive --> holds 1 value
 
-
 //String
 let username = "David"
 let poem ="It's a beautiful morning, no ?"
