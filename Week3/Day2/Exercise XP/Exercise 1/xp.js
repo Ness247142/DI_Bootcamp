@@ -1,5 +1,4 @@
 
-
 // //Exercise 1
 // Bonus: Fade out the 2nd paragraph over 2000 milliseconds, when it’s clicked.
 
