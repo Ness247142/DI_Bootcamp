@@ -33,4 +33,3 @@ function return_normal(event){
 // Call the function highlight() onMouseOver and the function return_normal() onMouseOut
 newEvent.addEventListener("mouseenter", highlight)
 newEvent.addEventListener("mouseleave", return_normal)
-
