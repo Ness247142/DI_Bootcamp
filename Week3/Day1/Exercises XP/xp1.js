@@ -30,7 +30,6 @@ console.log(newList);
 
 
 //Exercise 2
-
 // Change the name “Pete” by “Richard”
 // Change each first name of the <ul> by your name
 // Add at the end of each <ul>, a <li> that says “Hey students”
@@ -81,6 +80,7 @@ console.log(liFive);
 // Change the color of the navbar.
 // Find your Github name and store it in a variable.
 // Change your name by “The Boss”
+
 
 
 // Exercise 4
