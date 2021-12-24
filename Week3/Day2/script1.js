@@ -1,5 +1,4 @@
 
-
 // function clickParagraph() {
 //     console.log("hello")
 //     document.getElementById("p").style.backgroundColor = "yellow"
