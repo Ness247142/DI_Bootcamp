@@ -1,5 +1,4 @@
 
-
 // Exercise 2
 
 //Create a list of all bold items 
