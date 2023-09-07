@@ -1,3 +1,3 @@
 # [DI_Bootcamp Repository](https://developers.institute/en/)
 
-#### My personal repository for all the important files, assignments, projects and exercises done during the Full Stack Coding Bootcamp - Python at Developers Institute in Tel Aviv as a student (January-April 2021) and the internship as a teacher assistant (April-June 2021).
+#### My personal repository for every important files, assignments, projects and exercises finished and submitted during the Full Stack Coding Bootcamp - Python at Developers Institute in Tel Aviv as a student (January-April 2021) and the internship as a teacher assistant (April-June 2021).
