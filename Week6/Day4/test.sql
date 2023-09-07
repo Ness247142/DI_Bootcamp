@@ -1,5 +1,4 @@
 
-
 HAVING is like WHERE but after GROUP BY
 
 
