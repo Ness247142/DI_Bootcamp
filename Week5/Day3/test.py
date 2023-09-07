@@ -292,4 +292,3 @@ while True: # infinite loop
 	sleep(1) # show the time every 1 second
 
 
-
