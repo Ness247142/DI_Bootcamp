@@ -4,6 +4,7 @@
  ...', Wiley, 1980.   N.B. Various transformations are used in the table on
  pages 244-261 of the latter.
 
+
  Variables in order:
  CRIM     per capita crime rate by town
  ZN       proportion of residential land zoned for lots over 25,000 sq.ft.
